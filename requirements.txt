@@ -1,0 +1,31 @@
+# Core Libraries
+numpy
+pandas
+scipy
+
+# Data Processing and Analysis
+scikit-learn
+statsmodels
+re
+
+# Time Series Analysis
+ruptures
+
+# Visualization
+matplotlib
+plotly
+
+# Databases and Query Parsing
+pyodbc
+sqlparse
+neo4j
+
+# Semantic Web
+rdflib
+
+# Environment Variables Management
+python-dotenv
+
+# Natural Language Processing and AI
+openai
+langchain
