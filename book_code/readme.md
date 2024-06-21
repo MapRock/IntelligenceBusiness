@@ -1,1 +1,1 @@
-Sample code, mostly tied to the Figures in the book, Enterprise, Intelligence.
+Code, queries, and prompts tied to the Figures in the book, Enterprise, Intelligence.
