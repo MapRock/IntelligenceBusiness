@@ -1,0 +1,8 @@
+See Figure_178_Conditional_Probabilities.SQL
+
+Set variables as follows:
+
+DECLARE @min_change FLOAT=0.01
+DECLARE @min_prob FLOAT=0.40
+DECLARE @start_date DATE='2022-06-01'
+DECLARE @end_date DATE='2023-06-30'
