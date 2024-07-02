@@ -1,0 +1,3 @@
+The query towards the end of query.py is the one used in:
+        #   Figure 92: Good candidate for visualizing as a stacked bar chart.
+        #   Figure 93: The stacked bar chart query as implemented in the EKG.

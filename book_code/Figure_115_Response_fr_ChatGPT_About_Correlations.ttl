@@ -1,0 +1,17 @@
+@prefix ex: <http://example.org/> .
+
+ex:oilPriceChina a ex:Event ;
+    ex:description "Increase in Oil Price in China" .
+
+ex:altEnergyDemand a ex:Event ;
+    ex:description "Global Push for Alternative Energy" .
+
+ex:sugarcaneProduction a ex:Event ;
+    ex:description "Increased Sugarcane Production in Brazil" .
+
+ex:waterConsumption a ex:Event ;
+    ex:description "Rise in Water Consumption in Brazil" .
+
+ex:oilPriceChina ex:CAUSES ex:altEnergyDemand .
+ex:altEnergyDemand ex:CAUSES ex:sugarcaneProduction .
+ex:sugarcaneProduction ex:CAUSES ex:waterConsumption .

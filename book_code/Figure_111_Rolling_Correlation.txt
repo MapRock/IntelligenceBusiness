@@ -1,0 +1,7 @@
+Look in src/spearman_peason.py and look for this code:
+
+	# Plot and show correlations, both Pearson and Spearman
+	# This is Figure 111.
+	correlations = plot_correlations(df, use_pct_change=True, show_plot=True, pearson=True, spearman=True)
+
+If you run spearman_pearson.py directly, the visualization of Figure 111 will show up last.

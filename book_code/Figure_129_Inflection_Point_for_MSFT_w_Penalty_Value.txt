@@ -1,0 +1,8 @@
+See src/spearman_pearson.py. Search for the text "Figure 129". You will see this code:
+
+    penalty_value = 1 # Figure 129 and Figure 130 are from this plot. 
+    for s in [s1, s2]:
+        changepoints = detect_changepoints(s, sDate, penalty_value=penalty_value, show_plot=True)
+        print(changepoints). 
+
+Change penalty_value=3 for Figure 129, and penalty_value=1 for Figure 130.

@@ -1,0 +1,119 @@
+@prefix : <http://example.org/strategy_map#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Define classes
+:Financial a rdfs:Class .
+:Customers a rdfs:Class .
+:Operations a rdfs:Class .
+:Employees a rdfs:Class .
+:Goal a rdfs:Class .
+:Strategy a rdfs:Class .
+:Objective a rdfs:Class .
+:Tactic a rdfs:Class .
+:KPI a rdfs:Class .
+
+# Define properties
+:hasGoal a rdf:Property ;
+    rdfs:domain :Strategy ;
+    rdfs:range :Goal .
+:hasObjective a rdf:Property ;
+    rdfs:domain :Strategy ;
+    rdfs:range :Objective .
+:hasTactic a rdf:Property ;
+    rdfs:domain :Objective ;
+    rdfs:range :Tactic .
+:affects a rdf:Property ;
+    rdfs:domain :KPI ;
+    rdfs:range :KPI .
+:belongsTo a rdf:Property ;
+    rdfs:domain :KPI ;
+    rdfs:range rdfs:Class .
+
+# Define instances
+:LowerCosts a :KPI ;
+    rdfs:label "Lower Costs" ;
+    :belongsTo :Financial .
+
+:Profitability a :KPI ;
+    rdfs:label "Profitability" ;
+    :belongsTo :Financial ;
+    :affects :IncreasedRevenue, :Growth .
+
+:IncreasedRevenue a :KPI ;
+    rdfs:label "Increased Revenue" ;
+    :belongsTo :Financial ;
+    :affects :Growth .
+
+:Growth a :KPI ;
+    rdfs:label "Growth" ;
+    :belongsTo :Financial .
+
+:CustomerSatisfaction a :KPI ;
+    rdfs:label "Customer Satisfaction" ;
+    :belongsTo :Customers ;
+    :affects :ReturnVisits, :Referrals, :NewPatients .
+
+:ReturnVisits a :KPI ;
+    rdfs:label "Return Visits" ;
+    :belongsTo :Customers .
+
+:Referrals a :KPI ;
+    rdfs:label "Referrals" ;
+    :belongsTo :Customers ;
+    :affects :NewPatients .
+
+:NewPatients a :KPI ;
+    rdfs:label "New Patients" ;
+    :belongsTo :Customers ;
+    :affects :Growth .
+
+:BusinessIntelligenceSystem a :KPI ;
+    rdfs:label "Business Intelligence System" ;
+    :belongsTo :Operations ;
+    :affects :UnderstandCustomers .
+
+:UnderstandCustomers a :KPI ;
+    rdfs:label "Understand Customers" ;
+    :belongsTo :Operations ;
+    :affects :QualityOfWork .
+
+:QualityOfWork a :KPI ;
+    rdfs:label "Quality of Work" ;
+    :belongsTo :Operations ;
+    :affects :ServiceOfferings .
+
+:ServiceOfferings a :KPI ;
+    rdfs:label "Service Offerings" ;
+    :belongsTo :Operations ;
+    :affects :Growth .
+
+:PerformanceBasedCompensation a :KPI ;
+    rdfs:label "Performance-Based Compensation" ;
+    :belongsTo :Employees ;
+    :affects :EmployeeSatisfaction .
+
+:EmployeeSatisfaction a :KPI ;
+    rdfs:label "Employee Satisfaction" ;
+    :belongsTo :Employees ;
+    :affects :QualityAndAppropriateTraining .
+
+:QualityAndAppropriateTraining a :KPI ;
+    rdfs:label "Quality and Appropriate Training" ;
+    :belongsTo :Employees ;
+    :affects :ServiceOfferings .
+
+# Strategy relationships
+:Strategy1 a :Strategy ;
+    :hasGoal :DetermineGoals ;
+    :hasObjective :DetermineObjectives ;
+    :hasTactic :EmployTactics .
+
+:DetermineGoals a :Goal ;
+    rdfs:label "Determine the goals" .
+
+:DetermineObjectives a :Objective ;
+    rdfs:label "Determine the objectives of the strategy" .
+
+:EmployTactics a :Tactic ;
+    rdfs:label "Employ tactics for achieving the objectives" .
+

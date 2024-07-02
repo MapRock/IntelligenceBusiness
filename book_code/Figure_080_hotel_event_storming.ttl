@@ -1,0 +1,93 @@
+@prefix hotel: <http://example.org/hotel/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+hotel:ComplaintAgainstHousekeeping a hotel:Event ;
+    rdfs:label "Complaint Against Housekeeping" .
+
+hotel:FurnitureRemovedfromSuite a hotel:Event ;
+    rdfs:label "Furniture Removed from Suite" ;
+    hotel:nextEvent hotel:FurnitureAddedtoSuite .
+
+hotel:GuestPlacesKitchenOrder a hotel:Event ;
+    rdfs:label "Guest Places Kitchen Order" ;
+    hotel:nextEvent hotel:OrderReceivedbyKitchen .
+
+hotel:GuestmakesReservation a hotel:Event ;
+    rdfs:label "Guest makes Reservation" ;
+    hotel:nextEvent hotel:GuestcancelsReservation .
+
+hotel:AcceptPayment a hotel:Event ;
+    rdfs:label "Accept Payment" .
+
+hotel:AssignRoom a hotel:Event ;
+    rdfs:label "Assign Room" ;
+    hotel:nextEvent hotel:CheckOutGuest .
+
+hotel:CheckInGuest a hotel:Event ;
+    rdfs:label "Check In Guest" ;
+    hotel:nextEvent hotel:AssignRoom .
+
+hotel:CheckOutGuest a hotel:Event ;
+    rdfs:label "Check Out Guest" ;
+    hotel:nextEvent hotel:AcceptPayment .
+
+hotel:FurnitureAddedtoSuite a hotel:Event ;
+    rdfs:label "Furniture Added to Suite" ;
+    hotel:nextEvent hotel:SuiteCleaningStarted .
+
+hotel:GuestcancelsReservation a hotel:Event ;
+    rdfs:label "Guest cancels Reservation" ;
+    hotel:nextEvent hotel:CheckInGuest .
+
+hotel:KitchenCookOrder a hotel:Event ;
+    rdfs:label "Kitchen Cook Order" ;
+    hotel:nextEvent hotel:OrderPlated .
+
+hotel:KitchenOrderDeliveredtoGuest a hotel:Event ;
+    rdfs:label "Kitchen Order Delivered to Guest" .
+
+hotel:KitchenPrepsOrder a hotel:Event ;
+    rdfs:label "Kitchen Preps Order" ;
+    hotel:nextEvent hotel:KitchenCookOrder .
+
+hotel:OrderCompletionNotification a hotel:Event ;
+    rdfs:label "Order Completion Notification" ;
+    hotel:nextEvent hotel:KitchenOrderDeliveredtoGuest .
+
+hotel:OrderPlated a hotel:Event ;
+    rdfs:label "Order Plated" ;
+    hotel:nextEvent hotel:OrderCompletionNotification .
+
+hotel:OrderReceivedbyKitchen a hotel:Event ;
+    rdfs:label "Order Received by Kitchen" ;
+    hotel:nextEvent hotel:KitchenPrepsOrder .
+
+hotel:SuiteCleaningEnded a hotel:Event ;
+    rdfs:label "Suite Cleaning Ended" .
+
+hotel:SuiteCleaningStarted a hotel:Event ;
+    rdfs:label "Suite Cleaning Started" ;
+    hotel:nextEvent hotel:SuiteCleaningEnded .
+
+[] hotel:includesEvent hotel:ComplaintAgainstHousekeeping .
+
+[] hotel:includesEvent hotel:GuestPlacesKitchenOrder,
+        hotel:KitchenCookOrder,
+        hotel:KitchenOrderDeliveredtoGuest,
+        hotel:KitchenPrepsOrder,
+        hotel:OrderCompletionNotification,
+        hotel:OrderPlated,
+        hotel:OrderReceivedbyKitchen .
+
+[] hotel:includesEvent hotel:AcceptPayment,
+        hotel:AssignRoom,
+        hotel:CheckInGuest,
+        hotel:CheckOutGuest,
+        hotel:GuestcancelsReservation,
+        hotel:GuestmakesReservation .
+
+[] hotel:includesEvent hotel:FurnitureAddedtoSuite,
+        hotel:FurnitureRemovedfromSuite,
+        hotel:SuiteCleaningEnded,
+        hotel:SuiteCleaningStarted .
+

@@ -1,0 +1,1 @@
+Can you explain how toothpaste with fluoride fights tooth cavities? Then encode your explanation in Cypher to be added to a knowledge graph implemented with Neo4j. Please be sure to include enough information for a user to search for this using an NLP interface. Be sure your code works and doesn't result in orphaned nodes.

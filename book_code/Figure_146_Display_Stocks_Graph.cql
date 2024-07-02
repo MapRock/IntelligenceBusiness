@@ -1,0 +1,1 @@
+MATCH p=(n:Company)-[]-(r:Resource) RETURN p LIMIT 100

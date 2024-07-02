@@ -1,0 +1,10 @@
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/streetaddresses/> .
+
+# Example of a street address entry using vCard vocabulary
+ex:address1234 a vcard:Address ;
+    vcard:street-address "1234 Elm Street"^^xsd:string ;
+    vcard:locality "Springfield"^^xsd:string ;
+    vcard:region "IL"^^xsd:string ;
+    vcard:postal-code "62704"^^xsd:string .

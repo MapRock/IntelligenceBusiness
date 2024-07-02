@@ -1,0 +1,27 @@
+// Create nodes
+CREATE (cp:ComputerProgrammer {name: "Computer Programmer"})
+CREATE (adb:Role {name: "Architect and Builder of the Digital World"})
+CREATE (sd:Area {name: "Software Development"})
+CREATE (cw:Task {name: "Code Writing"})
+CREATE (cpi:Input {name: "Complex Problems and Ideas"})
+CREATE (fs:Output {name: "Functional Software"})
+CREATE (ssd:Phase {name: "Stages of Software Development"})
+CREATE (ur:Stage {name: "Understanding Requirements"})
+CREATE (da:Stage {name: "Designing Algorithms"})
+CREATE (co:Stage {name: "Coding"})
+CREATE (te:Stage {name: "Testing"})
+CREATE (de:Stage {name: "Debugging"})
+
+// Create relationships
+CREATE (cp)-[:ARE]->(adb)
+CREATE (cp)-[:PLAY_ROLE_IN]->(sd)
+CREATE (cp)-[:WRITE]->(cw)
+CREATE (cw)-[:TRANSFORMS]->(cpi)
+CREATE (cw)-[:PRODUCES]->(fs)
+CREATE (sd)-[:INVOLVES]->(ssd)
+CREATE (ssd)-[:INCLUDES]->(ur)
+CREATE (ssd)-[:INCLUDES]->(da)
+CREATE (ssd)-[:INCLUDES]->(co)
+CREATE (ssd)-[:INCLUDES]->(te)
+CREATE (ssd)-[:INCLUDES]->(de)
+

@@ -1,0 +1,8 @@
+Go to fourier.py and look for this code:
+
+    # Identify dominant frequencies in the Intel stock data
+    # This code is like Figure 136, except INTC is used instead of MON.
+    array2 = dominant_frequencies(df, 'Date', stock)
+    print(array2)
+
+This will show Figure 136. However, it shows for INTC, not MON - since I didn't include MON in stock_closes.csv.

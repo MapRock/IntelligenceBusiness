@@ -1,0 +1,6 @@
+Look for this code in fourier.py:
+
+    # Figure 139.
+    array = dominant_frequencies1(df, 'Date', stock, visualize_compare=True, variance_explained=True, title=f'Dominant Cycles {stock}')
+
+It will present something akin to Figure 139.

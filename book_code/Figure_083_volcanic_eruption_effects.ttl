@@ -1,0 +1,66 @@
+@prefix : <http://example.org/volcano/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+:LargeVolcanicEruption rdf:type :RareEvent;
+    rdfs:label "Large Volcanic Eruption".
+
+:AirTravelDisruption rdf:type :Effect;
+    rdfs:label "Air Travel Disruption";
+    rdfs:comment "Airborne ash can lead to the closure of airspace, resulting in flight cancellations and disruptions.";
+    :effectOf :LargeVolcanicEruption;
+    :hasMitigation :AirTravelDisruptionMitigation.
+
+:ClimateChange rdf:type :Effect;
+    rdfs:label "Short-term Climate Change";
+    rdfs:comment "Large eruptions can eject vast amounts of sulfur dioxide, leading to a temporary cooling effect on the planet's climate.";
+    :effectOf :LargeVolcanicEruption;
+    :hasMitigation :ClimateChangeMitigation.
+
+:WaterSourceContamination rdf:type :Effect;
+    rdfs:label "Water Source Contamination";
+    rdfs:comment "Ashfall can contaminate water sources, making them unsafe for drinking and agriculture.";
+    :effectOf :LargeVolcanicEruption;
+    :hasMitigation :WaterSourceContaminationMitigation.
+
+:RespiratoryIssues rdf:type :Effect;
+    rdfs:label "Respiratory Issues";
+    rdfs:comment "Fine volcanic ash can be harmful to breathe and can exacerbate respiratory issues in affected populations.";
+    :effectOf :LargeVolcanicEruption;
+    :hasMitigation :RespiratoryIssuesMitigation.
+
+:InfrastructureDamage rdf:type :Effect;
+    rdfs:label "Infrastructure Damage";
+    rdfs:comment "Ashfall and lava flows can damage roads, buildings, and other structures.";
+    :effectOf :LargeVolcanicEruption;
+    :hasMitigation :InfrastructureDamageMitigation.
+
+:EcologicalDisruption rdf:type :Effect;
+    rdfs:label "Ecological Disruption";
+    rdfs:comment "The local ecosystem can be disrupted due to ashfall and changes in water quality.";
+    :effectOf :LargeVolcanicEruption;
+    :hasMitigation :EcologicalDisruptionMitigation.
+
+:AirTravelDisruptionMitigation rdf:type :Mitigation;
+    rdfs:label "Rerouting Air Travel";
+    rdfs:comment "Monitoring ash clouds and rerouting air travel can minimize disruptions.".
+
+:ClimateChangeMitigation rdf:type :Mitigation;
+    rdfs:label "Research and Monitoring";
+    rdfs:comment "Researching and monitoring the atmospheric effects of eruptions can help in predicting climate patterns.".
+
+:WaterSourceContaminationMitigation rdf:type :Mitigation;
+    rdfs:label "Water Treatment and Alternative Sources";
+    rdfs:comment "Enhancing water treatment processes and identifying alternative water sources can reduce risks.".
+
+:RespiratoryIssuesMitigation rdf:type :Mitigation;
+    rdfs:label "Distribution of Masks and Public Awareness";
+    rdfs:comment "Distributing protective masks and creating public awareness can reduce health risks.".
+
+:InfrastructureDamageMitigation rdf:type :Mitigation;
+    rdfs:label "Reinforced Infrastructure";
+    rdfs:comment "Designing structures with reinforced materials can reduce damage from ash and lava flows.".
+
+:EcologicalDisruptionMitigation rdf:type :Mitigation;
+    rdfs:label "Ecosystem Restoration Efforts";
+    rdfs:comment "Post-eruption restoration efforts can help in the recovery of the affected ecosystems.".
