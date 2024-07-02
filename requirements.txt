@@ -3,10 +3,12 @@ numpy
 pandas
 scipy
 
+# Environment Variables Management
+python-dotenv
+
 # Data Processing and Analysis
 scikit-learn
 statsmodels
-re
 
 # Time Series Analysis
 ruptures
@@ -23,9 +25,11 @@ neo4j
 # Semantic Web
 rdflib
 
-# Environment Variables Management
-python-dotenv
-
 # Natural Language Processing and AI
 openai
 langchain
+
+# Other
+ast
+re
+
