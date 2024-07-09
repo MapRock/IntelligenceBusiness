@@ -1,0 +1,17 @@
+Given this user prompt: {user_prompt}, \n and the following information between the [START] and [END] tags:
+
+[START]
+{query}
+[END]
+
+and variables I've already parsed from that information:
+
+{variables}
+
+Do this:
+
+1. Try to extract from the user prompt objects that might serve as variable values.
+2. Replace those variable values in the query where there are << >> tags.
+3. Return only the formatted query. 
+
+IMPORTANT: ONLY RETURN THE FORMATTED QUERY. NO COMMENTS.

@@ -1,0 +1,8 @@
+name,text,NodeType,VariableName
+sales_amount," sale amount of products sold to customers, in currency such as dollars and euros. Ex: we sold $500 of paper last month.",measure,metric
+quantity,"quantity of items sold to customers. For example, we sold 40 units of soda.",measure,metric
+volume, gallons or liters or some other unit of volume of products sold to customers,measure,metric
+pack_size," number of items in a pack of some product. Example, lite beer comes in packs of 6, 12, and 24.",attribute,metric
+color," color of a product. Example: mugs come in red, blue, or black.",attribute,metric
+gini,"gini is a metric of the equality across a vector of values. It ranges from 0 through 1, where 0 means it's completely equal.",calculation,metric
+county,Administrative division within a state. What items come from my county? What state is this count in?,attribute,
