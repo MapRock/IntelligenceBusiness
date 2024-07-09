@@ -1,0 +1,51 @@
+Country,Verb,Product,UoM,ProdCat,MaxValue,Rank
+ABW,highest_value,Televisions,kCount         ,Economic Indicators,650,3
+BRA,highest_value,Swine,kCount         ,Livestock,34064,3
+BRA,top_producer_of,Coffee,metric tons    ,Crops,2759520,1
+CA,highest_value,State Corporate Income Tax,"$1,000 ",Economic Indicators,11849097,1
+CAN,top_producer_of,Natural Gas,ktoe           ,Fossil Fuels,168300,3
+CHE,highest_value,Life Expectancy,Years          ,Health and Well Being,84.2,3
+CHN,highest_value,People,kCount         ,People,1331400,1
+CHN,highest_value,Swine,kCount         ,Livestock,510625,1
+CHN,highest_value,Buffalo,kCount         ,Livestock,22813,3
+CHN,top_consumer_of,Fertilizer,metric tons    ,Fertilizer,55925.6,1
+CHN,top_producer_of,Coal,ktoe           ,Fossil Fuels,1212261,1
+CHN,top_producer_of,Roots and Tubers,metric tons    ,Crops,146648,1
+COL,top_producer_of,Coffee,metric tons    ,Crops,750900,3
+DEU,highest_value,Vehicles,kCount         ,Consumer Goods,598,2
+DNK,top_producer_of,Meat,Kg/Capita      ,Consumer Goods,378.24,1
+ESP,highest_value,Life Expectancy,Years          ,Health and Well Being,84.2,3
+ETH,highest_value,Camels,kCount         ,Livestock,2324,2
+FLK,top_producer_of,Meat,Kg/Capita      ,Consumer Goods,303.67,3
+FRA,highest_value,Vehicles,kCount         ,Consumer Goods,598,2
+HKG,highest_value,Life Expectancy,Years          ,Health and Well Being,85.1,2
+IN,highest_value,State Corporate Income Tax,"$1,000 ",Economic Indicators,1043873,3
+IND,highest_value,People,kCount         ,People,1156898,2
+IND,highest_value,Buffalo,kCount         ,Livestock,98805,1
+IND,top_consumer_of,Fertilizer,metric tons    ,Fertilizer,19257.7,3
+IND,top_producer_of,Coal,ktoe           ,Fossil Fuels,209740,3
+IRL,highest_value,Televisions,kCount         ,Economic Indicators,714.7,2
+JPN,highest_value,Gross Domestic Product,$/Capita       ,Economic Indicators,39824,3
+JPN,highest_value,Life Expectancy,Years          ,Health and Well Being,86.1,1
+KEN,highest_value,Camels,kCount         ,Livestock,1057.9,3
+LUX,highest_value,Gross Domestic Product,$/Capita       ,Economic Indicators,54178,1
+NGA,top_producer_of,Roots and Tubers,metric tons    ,Crops,92214,2
+NOR,highest_value,Gross Domestic Product,$/Capita       ,Economic Indicators,41446,2
+NZL,highest_value,Vehicles,kCount         ,Consumer Goods,722,1
+NZL,top_producer_of,Meat,Kg/Capita      ,Consumer Goods,349,2
+OH,highest_value,State Corporate Income Tax,"$1,000 ",Economic Indicators,1125654,2
+PAK,highest_value,Buffalo,kCount         ,Livestock,28400,2
+RUS,top_producer_of,Natural Gas,ktoe           ,Fossil Fuels,550901,1
+RUS,top_producer_of,Oil,ktoe           ,Fossil Fuels,480529,2
+RUS,top_producer_of,Roots and Tubers,metric tons    ,Crops,38573,3
+SAU,top_producer_of,Oil,ktoe           ,Fossil Fuels,514568,1
+SDN,highest_value,Camels,kCount         ,Livestock,3908,1
+SMR,highest_value,Televisions,kCount         ,Economic Indicators,907.4,1
+USA,highest_value,People,kCount         ,People,307212,3
+USA,highest_value,Swine,kCount         ,Livestock,61449,2
+USA,highest_value,Unemployment Rate,Percent        ,Economic Indicators,10,1
+USA,top_consumer_of,Fertilizer,metric tons    ,Fertilizer,25278.8,2
+USA,top_producer_of,Coal,ktoe           ,Fossil Fuels,595104,2
+USA,top_producer_of,Natural Gas,ktoe           ,Fossil Fuels,479296,2
+USA,top_producer_of,Oil,ktoe           ,Fossil Fuels,311791,3
+VNM,top_producer_of,Coffee,metric tons    ,Crops,1170000,2
