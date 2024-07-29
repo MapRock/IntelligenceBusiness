@@ -5,7 +5,7 @@ https://technicspub.com/enterprise-intelligence/
 
 # *** Update on June 28, 2024 ***
 
-I will have the supplemental code posted by <b>July 29, 2024</b>. The book just released on June 21, 2024. I need to properly comment the code and do the final edits of documents.
+I will have the supplemental code posted by <b>August 15, 2024</b>. I need to properly comment the code and do the final edits of documents.
 
 As I mentioned in the book, the supplemental code is just sample code. It didn't discuss code in the book, but it was used to create the bulk of the 200+ figures in the book.
 
@@ -19,4 +19,13 @@ Eugene
 </li><li>
 <a href="https://eugeneasahara.com/sources-of-interest-for-enterprise-intelligence/">Interesting videos that remind me of things in the book.</a>
 </li>
+</ul>
+
+# Tutorial
+
+There are two stages for the tutorial:
+
+<ul>
+<li>Set up the environnment and the sample data.</li>  
+<li>Post "Sample Stage Complete"</li>l  
 </ul>
