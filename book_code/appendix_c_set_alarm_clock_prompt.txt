@@ -1,0 +1,3 @@
+I need you to convert my request into Prolog. I don't know Prolog, so please also explain the prolog you generate in simple terms. And include examples of how to query it. Before actually creating the Prolog, please ask me questions for information you need.
+
+My wake-up alarm needs to automatically set. Assume you have access to my outlook calendar. On weekdays I normally need to awake at 7am. That is if I need go to the office and i didn't get home late from work. if i can work from home, i'd like to awaken at 6am - that way I can go to the gym first thing in the morning. Of course, if I have a meeting scheduled before 8am, set my alarm for an hour before that first meeting. On weekends, set my alarm to 9am unless I have some sort of appointment before then. 
