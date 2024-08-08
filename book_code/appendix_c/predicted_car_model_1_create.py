@@ -1,6 +1,20 @@
+"""
+This is the first of three Python programs demonstating the extraction of rules in a decision tree.
+
+This is a simple program using sklearn's DecisionTreeClassifier to train a decision tree model on a sample dataset. 
+The model is then saved to a pickle file.
+
+
+After running this program, next two steps are:
+1. Run the program predicted_car_model_2_read_dt_metadata.py to extract the rules from the decision tree model.
+2. Run the program predicted_car_model_3_query.py to query the decision tree model.
+
+"""
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 import pickle
+
+pickle_filename = 'c:\\temp\\car_model_predictor.pkl'
 
 # Sample data
 data = {
@@ -23,5 +37,5 @@ model = DecisionTreeClassifier()
 model.fit(X, y)
 
 # Save the model to a pickle file
-with open('c:\\temp\\car_model_predictor.pkl', 'wb') as file:
+with open(pickle_filename, 'wb') as file:
     pickle.dump(model, file)

@@ -2,9 +2,12 @@ import joblib
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
+pickle_filename = 'c:\\temp\\car_model_predictor.pkl'
+
+
 def predict_car_model(age, occupation):
     # Load the trained model
-    model = joblib.load('c:\\temp\\car_model_predictor.pkl')
+    model = joblib.load(pickle_filename)
 
     # Label encoder for the occupation feature
     label_encoder = LabelEncoder()
