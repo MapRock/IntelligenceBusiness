@@ -22,18 +22,19 @@ from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier, export_text
 import joblib
 from pyswip import Prolog
+import os
+
+# Get the directory of the current script.
+# Prolog needs / instead of \ in the path.
+current_directory = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/")
 
 # Load the Iris dataset
 iris = load_iris()
-X, y = iris.data, iris.target
 
-# Train a Decision Tree classifier
-clf = DecisionTreeClassifier(random_state=42)
-clf.fit(X, y)
+pkl_file = f'{current_directory}/decision_tree.pkl'
+prolog_file = f'{current_directory}/iris_prolog_rules.pl'
 
-# Save the model as a .pkl file
-joblib.dump(clf, 'c:/temp/decision_tree.pkl')
-from sklearn.tree import export_text
+clf = joblib.load(pkl_file)
 
 feature_names = [name.replace(" ", "").replace("(", "").replace(")", "").capitalize() for name in iris.feature_names]
 class_names = list(iris.target_names)
@@ -99,7 +100,8 @@ def generate_prolog_rules(tree, feature_names, class_names):
 prolog_rules = generate_prolog_rules(clf, feature_names, class_names)
 
 # Save the rules to a Prolog file
-with open('c:/temp/iris_prolog_rules.pl', 'w') as f:
+with open(prolog_file, 'w') as f:
+    f.write(f"% pkl file name: {pkl_file}\n\n")
     f.write(":- dynamic p/6.\n\n")
     for rule in prolog_rules:
         f.write(f"{rule}\n")

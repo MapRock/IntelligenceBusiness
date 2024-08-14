@@ -19,15 +19,21 @@ educational, or commercial purposes, provided that this notice remains intact.
 For more information, visit the book's official page or contact the publisher.
 """
 from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier, export_text
 import joblib
 from pyswip import Prolog
+import os
+
+# Get the directory of the current script.
+# Prolog needs / instead of \ in the path.
+current_directory = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/")
 
 
 iris = load_iris()
 
 # Load the trained Decision Tree model from the pickle file
-loaded_model = joblib.load('c:/temp/decision_tree.pkl')
+pkl_file = f"{current_directory}/decision_tree.pkl"
+
+loaded_model = joblib.load(pkl_file)
 
 # Define the input features for testing (same as those used in the Prolog query)
 input_features = [[1.0, 4.5, 5.0, 5.5]]
@@ -42,7 +48,7 @@ print(f"Probabilities for each class: {dict(zip(iris.target_names, predicted_pro
 prolog = Prolog()
 
 # Load the Prolog rules generated from the decision tree
-prolog.consult("c:/temp/iris_prolog_rules.pl")
+prolog.consult(f"{current_directory}/iris_prolog_rules.pl")
 
 # Execute a query to classify the same iris flower based on its features using Prolog
 # Create the query string dynamically using join
