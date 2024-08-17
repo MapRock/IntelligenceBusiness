@@ -1,0 +1,9 @@
+{
+    "server": "DESKTOP-N5ISJJF",
+    "database": "AdventureWorksDW2017",
+    "sql": "EXEC usp_GetCustomerOrders",
+    "resultset_predicates": {
+        "customer": ["CustomerKey", "LastName", "FirstName"],
+        "sales_order": []
+    }
+}
