@@ -1,8 +1,0 @@
-{
-    "server": "DESKTOP-N5ISJJF",
-    "database": "AdventureWorksDW2017",
-    "sql": "SELECT TOP 10 CustomerKey, FirstName, LastName FROM DimCustomer",
-    "resultset_predicates": {
-        "customer": []
-    }
-}
