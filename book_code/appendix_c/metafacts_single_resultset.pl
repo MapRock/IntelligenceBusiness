@@ -1,0 +1,10 @@
+customer(11000, 'Jon', 'Yang').
+customer(11001, 'Eugene', 'Huang').
+customer(11002, 'Ruben', 'Torres').
+customer(11003, 'Christy', 'Zhu').
+customer(11004, 'Elizabeth', 'Johnson').
+customer(11005, 'Julio', 'Ruiz').
+customer(11006, 'Janet', 'Alvarez').
+customer(11007, 'Marco', 'Mehta').
+customer(11008, 'Rob', 'Verhoff').
+customer(11009, 'Shannon', 'Carlson').

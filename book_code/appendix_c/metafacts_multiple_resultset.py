@@ -25,32 +25,32 @@ def execute_stored_procedure(cursor, sql):
     cursor.execute(sql)
     return cursor
 
-def process_result_sets(cursor, prolog, resultset_predicates):
+def process_result_sets(cursor, prolog, resultset_predicates, filename:str):
     """Process each result set and assert Prolog facts."""
     result_count = 0
     predicates_list = list(resultset_predicates.keys())
+    with open(filename, "w") as f:
+        while True:
+            try:
+                columns = [column[0] for column in cursor.description]
+                rows = cursor.fetchall()
+                if rows:
+                    predicate = predicates_list[result_count]
+                    if not resultset_predicates[predicate]:
+                        resultset_predicates[predicate] = columns
+                    column_order = resultset_predicates[predicate]
+                    assert_prolog_facts(prolog, rows, predicate, columns, column_order, f)
+                
+                if not cursor.nextset():
+                    break
+                else:
+                    result_count += 1
+            except pyodbc.ProgrammingError as e:
+                print("Warning:", e)
+                if not cursor.nextset():
+                    break
 
-    while True:
-        try:
-            columns = [column[0] for column in cursor.description]
-            rows = cursor.fetchall()
-            if rows:
-                predicate = predicates_list[result_count]
-                if not resultset_predicates[predicate]:
-                    resultset_predicates[predicate] = columns
-                column_order = resultset_predicates[predicate]
-                assert_prolog_facts(prolog, rows, predicate, columns, column_order)
-            
-            if not cursor.nextset():
-                break
-            else:
-                result_count += 1
-        except pyodbc.ProgrammingError as e:
-            print("Warning:", e)
-            if not cursor.nextset():
-                break
-
-def assert_prolog_facts(prolog, rows, predicate, columns, column_order):
+def assert_prolog_facts(prolog, rows, predicate, columns, column_order, f):
     """Assert Prolog facts based on the result set data."""
     for row in rows:
         values = [
@@ -60,6 +60,7 @@ def assert_prolog_facts(prolog, rows, predicate, columns, column_order):
         prolog_fact = f"{predicate}({', '.join(values)})"
         print(f"Asserting: {prolog_fact}")
         prolog.assertz(prolog_fact)
+        f.write(prolog_fact + ".\n")
 
 def query_prolog(prolog, resultset_predicates):
     """Query Prolog after all facts have been asserted."""
@@ -74,8 +75,11 @@ def query_prolog(prolog, resultset_predicates):
 if __name__ == "__main__":
     current_directory = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/")
 
-    config_file = f"{current_directory}/metafacts_multiple_resultset.json"
-    #config_file = f"{current_directory}/metafacts.json" 
+    metafacts_file_name = "metafacts_multiple_resultset"
+    # metafacts_file_name = "metafacts_single_resultset"
+
+    config_file = f"{current_directory}/{metafacts_file_name}.json"
+    output_file = f"{current_directory}/{metafacts_file_name}.pl"
 
     # Load configuration and set variables
     server, database, sql, resultset_predicates = load_config(config_file)
@@ -91,7 +95,7 @@ if __name__ == "__main__":
     cursor = execute_stored_procedure(cursor, sql)
 
     # Process result sets and assert Prolog facts
-    process_result_sets(cursor, prolog, resultset_predicates)
+    process_result_sets(cursor, prolog, resultset_predicates, output_file)
 
     # Close the database connection
     cursor.close()
