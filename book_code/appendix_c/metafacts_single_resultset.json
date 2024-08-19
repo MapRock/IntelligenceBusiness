@@ -1,7 +1,7 @@
 {
     "server": "DESKTOP-N5ISJJF",
     "database": "AdventureWorksDW2017",
-    "sql": "SELECT TOP 10 CustomerKey, FirstName, LastName FROM DimCustomer",
+    "sql": "SELECT TOP 10 CustomerKey, FirstName, LastName FROM DimCustomer WHERE CustomerKey BETWEEN 11000 AND 11010",
     "resultset_predicates": {
         "customer": []
     }

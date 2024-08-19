@@ -5,5 +5,6 @@
     "resultset_predicates": {
         "customer": ["CustomerKey", "LastName", "FirstName"],
         "sales_order": []
-    }
+    },
+    "description": "This stored procedure returns two result sets. The first result set contains customer information, and the second result set contains sales order information. The customer result set contains three columns: CustomerKey, LastName, and FirstName. The sales order result set contains columns for the sales order number, order date, and total due."
 }
