@@ -4,5 +4,6 @@
     "sql": "SELECT TOP 10 CustomerKey, FirstName, LastName FROM DimCustomer WHERE CustomerKey BETWEEN 11000 AND 11010",
     "resultset_predicates": {
         "customer": []
-    }
+    },
+    "description": "Retrieve a sample set of customers from AdventureWorksDW"
 }
