@@ -3,11 +3,11 @@ Supplemental material for the book, Enterprise Intelligence, by Eugene Asahara.
 
 https://technicspub.com/enterprise-intelligence/
 
-# *** Update on August 23, 2024 ***
+# *** Update on October 15, 2024 ***
 
-I will have the supplemental code posted by <b>September 15, 2024</b>. I need to properly comment the code and do the final edits of documents.
+I apologize for not having the supporting source for "Enterprise Intelligence" checked in. I'm having a few health issues, but this code is my top priority.
 
-As I mentioned in the book, the supplemental code is just sample code. It didn't discuss code in the book, but it was used to create the bulk of the 200+ figures in the book.
+I'm shooting for the end of November 2024. Thank you for your patience.
 
 Eugene
 
