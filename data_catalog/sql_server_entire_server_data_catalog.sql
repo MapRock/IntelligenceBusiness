@@ -146,27 +146,25 @@ in the grid result, Copy with headers, paste in eugene_sql_database_catalog.csv 
 Remember to set NULL (it's a string if we save it) as blank.
 This is the source for the Cypher script, load_data_catalog_into_neo4j.cql
 */
-SELECT * FROM #Results
+SELECT
+    [ServerName] ,
+    [Catalog] ,
+	TableSchema ,
+    TableName ,
+    ColumnName ,
+    ColumnType ,
+    [MaxLength] ,
+    ObjectType ,
+    IsPrimaryKey,
+    ForeignKeyTable ,
+    ForeignKeyColumn ,
+	table_uri , 
+	column_uri ,
+	table_description ,
+	column_description
+FROM #Results
 --where (ColumnName like '%Address%' or ColumnName like '%zip%' or ColumnName like '%state%') and TableName='S_Customer_HILTON_SERV_GUESTS'
 	ORDER BY ServerName,[Catalog],TableSchema,TableName,[ColumnName]
-/*
-SET IDENTITY_INSERT [EventEnsemble].[dbo].[DimSources] ON;
-TRUNCATE TABLE [EventEnsemble].[dbo].[DimSources]
-
-INSERT INTO [EventEnsemble].[dbo].[DimSources]
-	(SourceID,ServerName,[Catalog],TableSchema,TableName,ColumnName)
-	SELECT DISTINCT
-		ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS SourceID,
-		ServerName AS ServerName,
-		[Catalog],
-		[TableSchema],
-		TableName,
-		ColumnName
-	FROM
-		#Results
-
-SET IDENTITY_INSERT [EventEnsemble].[dbo].[DimSources] OFF;
-*/
 
 -- Clean up
 DROP TABLE #Results
