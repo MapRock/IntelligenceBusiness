@@ -16,16 +16,22 @@ You are granted permission to use, modify, and distribute this code for personal
 educational, or commercial purposes, provided that this notice remains intact.
 
 For more information, contact the publisher or eugene@softcodedlogic.com
+
+!!! WARNING: Be sure to use a Neo4j database dedicated to the Tutorial from either Enterprise Intelligence or Time Molecules. !!!
 */
 
-MATCH (n) DETACH DELETE n;
+/* Remove the comment block tags to initialize your Neo4j database dedicated to the book tutorials.
+//[START] Initialize Neo4j Database
 
+MATCH (n) DETACH DELETE n;
 
 // Deleting existing nodes and relationships
 MATCH (s:Server) DETACH DELETE s;
 MATCH (c:Catalog) DETACH DELETE c;
 MATCH (t:Table) DETACH DELETE t;
 MATCH (col:Column) DETACH DELETE col;
+//[END] Initialize Neo4j Database
+*/
 
 // Importing data from CSV
 //Created from sql_server_entire_server_data_catalog.sql
