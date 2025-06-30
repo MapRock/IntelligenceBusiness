@@ -19,7 +19,7 @@ plotly
 
 # Databases and Query Parsing
 pyodbc
-sqlparse
+sqlglot
 neo4j
 
 # Semantic Web
