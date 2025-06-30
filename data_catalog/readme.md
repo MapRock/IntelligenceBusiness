@@ -89,7 +89,5 @@ MERGE (tbl)-[:HAS_COLUMN]->(col);
     <li>Explore your new <em>Data Catalog Graph</em>!</li>
   </ol>
 
-  <hr>
-  <p><em>Generated on June 30, 2025</em></p>
 </body>
 </html>
