@@ -27,5 +27,10 @@ There are two stages for the tutorial:
 
 <ul>
 <li>Set up the environnment and the sample data.</li>  
-<li>Post "Sample Stage Complete"</li>l  
+<li>Post "Sample Stage Complete"</li>
 </ul>
+
+# Baby Step Start
+
+If you’re new to knowledge graphs and the Semantic Web, I wrote a page on a <a href="https://eugeneasahara.com/baby-step-towards-incorporating-knowledge-graphs-into-business-intelligence/">blog on a baby step towards incorporating the Semantic Web into your BI platform</a>. It was intended to be an appendix in Enterprise Intelligence, but missed the cut.
+
