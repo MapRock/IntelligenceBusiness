@@ -1,266 +1,134 @@
 {
-  "version": "0.1",
+  "version": "1.0",
   "namespace": {
-    "enterprise_base_iri": "https://example.com/iri/",
-    "ontology_base_iri": "https://example.com/ontology/"
+    "enterprise_base_iri": "https://enterprise.example.com/resource/",
+    "ontology_base_iri": "https://enterprise.example.com/ontology/"
   },
   "tables": [
     {
       "table": {
-        "database": "AdventureWorksDW",
+        "database": "EnterpriseDW",
         "schema": "dbo",
-        "name": "DimProduct"
+        "name": "dimProduct"
       },
       "row_identity": {
-        "iri_column": "IRI",
-        "keys_used": ["ProductKey"],
-        "generation_rule": "https://example.com/iri/product/{ProductKey}"
+        "iri_column": "ProductIRI",
+        "keys_used": ["ProductKey", "SKU"],
+        "generation_rule": "Concatenate enterprise_base_iri with 'product/' and the ProductKey"
       },
       "entity_concept": {
-        "iri": "https://example.com/ontology/Product",
-        "label": "Product",
-        "external_candidates": [
-          {
-            "source": "wikidata",
-            "iri": "http://www.wikidata.org/entity/Q2424752",
-            "label": "product",
-            "status": "proposed"
-          }
-        ]
+        "iri": "https://www.wikidata.org/entity/Q2424752",
+        "label": "product"
       },
-      "context_description": "The Products table represents the set of goods or services offered by the business for sale, tracking, and analysis. Each row corresponds to a distinct product entity with a stable identity used across sales, inventory, and financial reporting. Products are commonly organized into hierarchies such as subcategory and category to support aggregation and comparison. The table typically includes internal keys for joins, business identifiers such as product codes or SKUs, and human-readable name fields for reporting. Semantically, a product is a persistent thing rather than an event; while attributes may change, product identity should remain stable over time.",
+      "context_description": "Represents the set of goods or services offered by the business for sale, tracking, and analysis. Each row corresponds to a distinct product entity with a stable identity used across sales, inventory, and financial reporting. Products are commonly organized into hierarchies such as subcategory and category to support aggregation and comparison. The table typically includes internal keys for joins, business identifiers such as product codes or SKUs, and human-readable name fields for reporting. Semantically, a product is a persistent thing rather than an event; while attributes may change, product identity should remain stable over time.",
       "display_fields": {
-        "label_column": "EnglishProductName",
-        "description_column": null
+        "label_column": "Description",
+        "description_column": "Description"
       },
       "columns": [
         {
-          "name": "ProductKey",
-          "role": "primary_key",
-          "concept": {
-            "iri": "https://example.com/ontology/SurrogateKey",
-            "label": "Surrogate key"
-          }
+          "column_name": "SKU",
+          "entity_concept": {
+            "iri": "https://www.wikidata.org/entity/Q399757",
+            "label": "stock keeping unit"
+          },
+          "context_description": "A business-defined stock keeping unit that uniquely identifies a sellable item for operational tracking."
         },
         {
-          "name": "ProductAlternateKey",
-          "role": "business_key",
-          "concept": {
-            "iri": "https://example.com/ontology/ProductCode",
-            "label": "Product code / SKU"
+          "column_name": "Description",
+          "entity_concept": {
+            "iri": "https://www.wikidata.org/entity/Q2424752",
+            "label": "product"
           },
-          "predicate_from_entity": {
-            "iri": "https://example.com/ontology/hasProductCode",
-            "label": "has product code"
-          }
+          "context_description": "Provides a human-readable name or narrative used in reporting and merchandising contexts."
         },
         {
-          "name": "EnglishProductName",
-          "role": "label",
-          "concept": {
-            "iri": "https://example.com/ontology/Name",
-            "label": "Name"
+          "column_name": "Category",
+          "entity_concept": {
+            "iri": "https://www.wikidata.org/entity/Q63981612",
+            "label": "product category"
           },
-          "predicate_from_entity": {
-            "iri": "https://example.com/ontology/hasLabel",
-            "label": "has label"
-          }
-        },
-        {
-          "name": "Color",
-          "role": "attribute",
-          "concept": {
-            "iri": "https://example.com/ontology/Color",
-            "label": "Color",
-            "external_candidates": [
-              {
-                "source": "wikidata",
-                "iri": "http://www.wikidata.org/entity/Q1075",
-                "label": "color",
-                "status": "proposed"
-              }
-            ]
-          },
-          "predicate_from_entity": {
-            "iri": "https://example.com/ontology/hasColor",
-            "label": "has color"
-          }
-        },
-        {
-          "name": "ProductSubcategoryKey",
-          "role": "foreign_key",
-          "references": {
-            "table": "DimProductSubcategory",
-            "column": "ProductSubcategoryKey"
-          },
-          "predicate_from_entity": {
-            "iri": "https://example.com/ontology/inSubcategory",
-            "label": "in subcategory"
-          }
+          "context_description": "Classifies the product within a hierarchical grouping structure, enabling aggregation, filtering, and comparative analysis across related product lines."
         }
       ],
-      "relationships": [
-        {
-          "type": "foreign_key",
-          "from": { "table": "DimProduct", "column": "ProductSubcategoryKey" },
-          "to": { "table": "DimProductSubcategory", "column": "ProductSubcategoryKey" },
-          "predicate": {
-            "iri": "https://example.com/ontology/inSubcategory",
-            "label": "in subcategory"
-          }
-        }
-      ],
+      "relationships": [],
       "hierarchies": [
         {
-          "name": "ProductCategoryHierarchy",
+          "name": "Product Category Hierarchy",
           "levels": [
-            {
-              "table": "DimProductCategory",
-              "label_column": "EnglishProductCategoryName",
-              "predicate_to_parent": {
-                "iri": "https://example.com/ontology/inCategory",
-                "label": "in category"
-              }
-            },
-            {
-              "table": "DimProductSubcategory",
-              "label_column": "EnglishProductSubcategoryName",
-              "predicate_to_parent": {
-                "iri": "https://example.com/ontology/inSubcategory",
-                "label": "in subcategory"
-              }
-            },
-            {
-              "table": "DimProduct",
-              "label_column": "EnglishProductName"
-            }
+            "Category",
+            "Subcategory",
+            "Product"
           ]
         }
       ]
     },
     {
       "table": {
-        "database": "AdventureWorksDW",
+        "database": "EnterpriseDW",
         "schema": "dbo",
-        "name": "DimCustomer"
+        "name": "dimCustomer"
       },
       "row_identity": {
-        "iri_column": "IRI",
-        "keys_used": ["CustomerKey"],
-        "generation_rule": "https://example.com/iri/customer/{CustomerKey}"
+        "iri_column": "CustomerIRI",
+        "keys_used": ["CustomerKey", "CustomerID"],
+        "generation_rule": "Concatenate enterprise_base_iri with 'customer/' and the CustomerKey"
       },
       "entity_concept": {
-        "iri": "https://example.com/ontology/Customer",
-        "label": "Customer"
+        "iri": "https://www.wikidata.org/entity/Q852835",
+        "label": "customer"
       },
-      "context_description": "The Customers table represents entities that purchase or receive goods or services from the organization. Each row corresponds to a customer identity that may represent an individual, household, or organization, depending on business context. Customers are central to analyses involving revenue, retention, segmentation, and geographic distribution. The table usually contains internal surrogate keys, business identifiers, name and address fields, and attributes such as customer type, status, or region. Semantically, a customer is a social or legal entity rather than a transaction, and identity should remain consistent even as attributes or classifications change over time.",
+      "context_description": "Represents entities that purchase or receive goods or services from the organization. Each row corresponds to a customer identity that may represent an individual, household, or organization, depending on business context. Customers are central to analyses involving revenue, retention, segmentation, and geographic distribution. The table usually contains internal surrogate keys, business identifiers, name and address fields, and attributes such as customer type, status, or region. Semantically, a customer is a social or legal entity rather than a transaction, and identity should remain consistent even as attributes or classifications change over time.",
       "display_fields": {
-        "label_column": "FullName",
-        "description_column": null
+        "label_column": "CustomerName",
+        "description_column": "CustomerType"
       },
-      "columns": [
+      "columns": [],
+      "relationships": [],
+      "hierarchies": [
         {
-          "name": "CustomerKey",
-          "role": "primary_key",
-          "concept": { "iri": "https://example.com/ontology/SurrogateKey", "label": "Surrogate key" }
-        },
-        {
-          "name": "CustomerAlternateKey",
-          "role": "business_key",
-          "concept": { "iri": "https://example.com/ontology/CustomerNumber", "label": "Customer number" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/hasCustomerNumber", "label": "has customer number" }
-        },
-        {
-          "name": "FullName",
-          "role": "label",
-          "concept": { "iri": "https://example.com/ontology/PersonOrOrgName", "label": "Customer name" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/hasLabel", "label": "has label" }
-        },
-        {
-          "name": "EmailAddress",
-          "role": "attribute",
-          "concept": { "iri": "https://example.com/ontology/EmailAddress", "label": "Email address" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/hasEmail", "label": "has email" }
-        },
-        {
-          "name": "GeographyKey",
-          "role": "foreign_key",
-          "references": { "table": "DimGeography", "column": "GeographyKey" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/locatedIn", "label": "located in" }
-        }
-      ],
-      "relationships": [
-        {
-          "type": "foreign_key",
-          "from": { "table": "DimCustomer", "column": "GeographyKey" },
-          "to": { "table": "DimGeography", "column": "GeographyKey" },
-          "predicate": { "iri": "https://example.com/ontology/locatedIn", "label": "located in" }
+          "name": "Customer Geography Hierarchy",
+          "levels": [
+            "Region",
+            "Country",
+            "State",
+            "City",
+            "Customer"
+          ]
         }
       ]
     },
     {
       "table": {
-        "database": "AdventureWorksDW",
+        "database": "EnterpriseDW",
         "schema": "dbo",
-        "name": "DimEmployee"
+        "name": "dimEmployee"
       },
       "row_identity": {
-        "iri_column": "IRI",
-        "keys_used": ["EmployeeKey"],
-        "generation_rule": "https://example.com/iri/employee/{EmployeeKey}"
+        "iri_column": "EmployeeIRI",
+        "keys_used": ["EmployeeKey", "EmployeeID"],
+        "generation_rule": "Concatenate enterprise_base_iri with 'employee/' and the EmployeeKey"
       },
       "entity_concept": {
-        "iri": "https://example.com/ontology/Employee",
-        "label": "Employee"
+        "iri": "https://www.wikidata.org/entity/Q703534",
+        "label": "employee"
       },
-      "context_description": "The Employees table represents people who work for the organization, including employees and, where applicable, contractors. Each row corresponds to an individual person with a stable internal identity used for workforce, organizational, and operational analysis. The table typically includes internal identifiers, employee numbers, names, titles, and attributes such as department, role, manager, and location. Semantically, an employee is a person distinct from their role or reporting structure; while positions and assignments may change, the individual’s identity remains the same across time and analyses.",
+      "context_description": "Represents people who work for the organization, including employees and, where applicable, contractors. Each row corresponds to an individual person with a stable internal identity used for workforce, organizational, and operational analysis. The table typically includes internal identifiers, employee numbers, names, titles, and attributes such as department, role, manager, and location. Semantically, an employee is a person distinct from their role or reporting structure; while positions and assignments may change, the individual’s identity remains the same across time and analyses.",
       "display_fields": {
-        "label_column": "FullName",
+        "label_column": "EmployeeName",
         "description_column": "Title"
       },
-      "columns": [
+      "columns": [],
+      "relationships": [],
+      "hierarchies": [
         {
-          "name": "EmployeeKey",
-          "role": "primary_key",
-          "concept": { "iri": "https://example.com/ontology/SurrogateKey", "label": "Surrogate key" }
-        },
-        {
-          "name": "EmployeeNationalIDAlternateKey",
-          "role": "business_key",
-          "concept": { "iri": "https://example.com/ontology/EmployeeNumber", "label": "Employee number" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/hasEmployeeNumber", "label": "has employee number" }
-        },
-        {
-          "name": "FullName",
-          "role": "label",
-          "concept": { "iri": "https://example.com/ontology/PersonName", "label": "Person name" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/hasLabel", "label": "has label" }
-        },
-        {
-          "name": "Title",
-          "role": "attribute",
-          "concept": { "iri": "https://example.com/ontology/JobTitle", "label": "Job title" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/hasTitle", "label": "has title" }
-        },
-        {
-          "name": "DepartmentName",
-          "role": "attribute",
-          "concept": { "iri": "https://example.com/ontology/Department", "label": "Department" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/inDepartment", "label": "in department" }
-        },
-        {
-          "name": "ParentEmployeeKey",
-          "role": "foreign_key",
-          "references": { "table": "DimEmployee", "column": "EmployeeKey" },
-          "predicate_from_entity": { "iri": "https://example.com/ontology/reportsTo", "label": "reports to" }
-        }
-      ],
-      "relationships": [
-        {
-          "type": "foreign_key",
-          "from": { "table": "DimEmployee", "column": "ParentEmployeeKey" },
-          "to": { "table": "DimEmployee", "column": "EmployeeKey" },
-          "predicate": { "iri": "https://example.com/ontology/reportsTo", "label": "reports to" }
+          "name": "Organizational Hierarchy",
+          "levels": [
+            "Executive",
+            "Department",
+            "Manager",
+            "Employee"
+          ]
         }
       ]
     }
