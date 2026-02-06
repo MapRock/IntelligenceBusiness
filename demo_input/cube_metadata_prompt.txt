@@ -1,0 +1,35 @@
+Please consolidate the following information into a single JSON document. The JSON format is:
+Produce JSON using this schema:
+Top level:
+•	version (string)
+•	namespace 
+o	enterprise_base_iri
+o	ontology_base_iri
+•	tables[]
+Each table must include:
+•	table {database, schema, name}
+•	row_identity {iri_column, keys_used[], generation_rule}
+•	entity_concept {iri, label}
+•	context_description
+•	display_fields {label_column, description_column}
+•	columns[]
+•	relationships[]
+•	hierarchies[]
+These are the context descriptions of the tables:
+•	Table Name: dimProduct. Represents the set of goods or services offered by the business for sale, tracking, and analysis. Each row corresponds to a distinct product entity with a stable identity used across sales, inventory, and financial reporting. Products are commonly organized into hierarchies such as subcategory and category to support aggregation and comparison. The table typically includes internal keys for joins, business identifiers such as product codes or SKUs, and human-readable name fields for reporting. Semantically, a product is a persistent thing rather than an event; while attributes may change, product identity should remain stable over time.
+•	Table Name: dimCustomer. Represents entities that purchase or receive goods or services from the organization. Each row corresponds to a customer identity that may represent an individual, household, or organization, depending on business context. Customers are central to analyses involving revenue, retention, segmentation, and geographic distribution. The table usually contains internal surrogate keys, business identifiers, name and address fields, and attributes such as customer type, status, or region. Semantically, a customer is a social or legal entity rather than a transaction, and identity should remain consistent even as attributes or classifications change over time.
+•	Table Name: dimEmployee. Represents people who work for the organization, including employees and, where applicable, contractors. Each row corresponds to an individual person with a stable internal identity used for workforce, organizational, and operational analysis. The table typically includes internal identifiers, employee numbers, names, titles, and attributes such as department, role, manager, and location. Semantically, an employee is a person distinct from their role or reporting structure; while positions and assignments may change, the individual’s identity remains the same across time and analyses.
+This is the Wikidata QID mapping to the tables:
+table_name,guessed_qid,wikidata_label,iri
+dimProduct,Q2424752,product,https://www.wikidata.org/entity/Q2424752
+dimCustomer,Q852835,customer,https://www.wikidata.org/entity/Q852835
+dimEmployee,Q703534,employee,https://www.wikidata.org/entity/Q703534
+There are the context descriptions of columns:
+•	Column Name: dimProduct.[SKU]. is a business-defined stock keeping unit that uniquely identifies a sellable item for operational tracking. 
+•	Column Name: dimProduct.[Description]. provides a human-readable name or narrative used in reporting and merchandising contexts. 
+•	Column Name: dimProduct.[Category]. classifies the product within a hierarchical grouping structure, enabling aggregation, filtering, and comparative analysis across related product lines. Together, these fields support consistent identification and dimensional slicing in analytics.
+This is the Wikidata QID mapping to the columns:
+column_name,qid,label,iri
+"dimProduct.[SKU]",Q399757,stock keeping unit,https://www.wikidata.org/entity/Q399757
+"dimProduct.[Description]",Q2424752,product,https://www.wikidata.org/entity/Q2424752
+"dimProduct.[Category]",Q63981612,product category,https://www.wikidata.org/entity/Q63981612
