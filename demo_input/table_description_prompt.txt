@@ -1,0 +1,25 @@
+You are generating a semantic description for a database table to be used in vector embeddings.
+
+Inputs:
+• Table Name: {table_name}
+• Columns: {comma-separated column list}
+
+Instructions:
+
+1. Infer the business meaning of the table strictly from the table name and column names.
+2. Do NOT assume knowledge of any specific database, vendor, or implementation.
+3. Do NOT hallucinate measures, processes, or industries not implied by the names.
+4. Describe what real-world entities the rows represent.
+5. Explain how the table is typically used in analytics or reporting.
+6. Mention identity stability (e.g., whether it represents persistent entities vs events).
+7. Reference hierarchical or categorical structure if column names imply it.
+8. Write in neutral semantic language suitable for ontology or knowledge graph alignment.
+
+Output Requirements:
+
+• Length: ~100 words (90–120 ideal)
+• Single paragraph
+• No bullet points
+• No column list restatement
+• No SQL or technical implementation language
+• Focus on meaning, not structure
