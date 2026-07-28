@@ -245,36 +245,8 @@ The observation layer is deliberately simple. Higher-order reasoning (induction,
 
 ---
 
-## 10. Project Layout (quick reference)
 
-```text
-src/insight_function_array/
-├── __init__.py              # public API
-├── engine.py                # detect + render orchestration
-├── columns.py               # dataframe role inference
-├── registry.py              # dynamic analyzer discovery
-├── settings.py              # thresholds
-├── statistics.py            # robust z-score, clustering helpers
-├── output.py                # DataFrame & Markdown helpers
-├── catalog.py               # @insight metadata harvest
-├── analyzers/
-│   ├── base.py
-│   ├── bar.py
-│   ├── histogram.py
-│   ├── line.py
-│   ├── scatter.py
-│   └── pie.py
-├── sql/
-│   ├── context.py
-│   └── lineage.py
-└── demo/
-    ├── datasets.py
-    └── run_demo.py
-```
-
----
-
-## 11. Next Steps
+## 10. Next Steps
 
 - Replace the synthetic data sets with real BI query extracts.
 - Persist the tidy findings ledger + lineage into your graph store as `QueryDef` nodes.
