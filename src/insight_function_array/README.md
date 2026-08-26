@@ -32,6 +32,8 @@ src/insight_function_array/
 │   └── lineage.py        stepwise outer-to-base column lineage
 └── demo/
     ├── datasets.py       synthetic dataframes
+    ├── competitor_surprise.py       
+    ├── generate_dataset_and_analyze.py
     └── run_demo.py       command-line demonstration
 ```
 
@@ -39,14 +41,15 @@ All uploaded source files are preserved without modification under `legacy/`.
 
 ## Install
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -e ".[all]"
-```
+## Run the complete IFA demonstration
 
-The SQL metadata modules require `sqlglot`; clustering requires
-`scikit-learn`. Both are included by the `all` extra.
+From this directory:
+
+```powershell
+pip install -e ".[all]"
+
+python -m insight_function_array.demo.generate_dataset_and_analyze `
+    --output .\ifa_demo_output
 
 ## Basic use
 
