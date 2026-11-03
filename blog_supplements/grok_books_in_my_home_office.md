@@ -2,7 +2,7 @@
 
 ## Metadata
 - **Date of conversation**: November 3, 2026
-- **Participants**: Eugene Asahara (user) and Grok (AI assistant built by xAI)
+- **Participants**: Eugene Asahara (user) and Grok 4.7 (AI assistant built by xAI)
 - **Context**: An explicit experiment by the user to test estimation / inference capabilities
 - **Core question**: How many books are on the bookshelves in a non-master-bedroom home office?
 - **Actual answer (revealed at the end)**: 300
