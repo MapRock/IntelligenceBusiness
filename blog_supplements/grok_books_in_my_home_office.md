@@ -147,8 +147,8 @@ I took the four factors you supplied as given examples of the kind of informatio
 
 **Additional plausible factors drawn from public information**
 - Authorship: publishers normally supply author copies. A writer of several substantial technical books is likely to keep a modest number of those physical copies (and perhaps a few foreign-edition or review copies).
-- Career span and age (~64): the earliest decades were paper-heavy, so a small residue of older reference volumes or personal favorites may survive even if most later material is digital.
-- House and room: 4-bedroom, ~2,200 sq ft 1990s suburban house; the office is a non-master bedroom. After desk, monitors, and circulation space, usable shelf length is limited (typically one or two standard bookcases at most).
+- Career span and age [Reacted age]: the earliest decades were paper-heavy, so a small residue of older reference volumes or personal favorites may survive even if most later material is digital.
+- House and room: [Redacted house specs]; the office is a non-master bedroom. After desk, monitors, and circulation space, usable shelf length is limited (typically one or two standard bookcases at most).
 - Move history: multiple prior addresses appear in public records. People often cull physical books when they move; repeated moves favor a smaller retained collection.
 - Digital writing practice: heavy blog output and reliance on online sources for current material further reduce the need for a large paper reference shelf.
 - No public signals of collecting: nothing in the visible record suggests rare-book interest, a general literary library, or wall-to-wall custom shelving.
