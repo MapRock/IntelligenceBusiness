@@ -8,6 +8,8 @@
 - **Actual answer (revealed at the end)**: 300
 - **Primary methods tested**: Public information retrieval, Fermi estimation, and Sherlock Holmes-style inference from limited clues
 
+Note: Some residential identifiers and property-record references have been redacted or generalized for privacy, even though it's my own information that Grok managed to find publicly. The reasoning paths, assumptions, numerical estimates, and experimental results have been retained.
+
 ## Summary
 The user identified himself as Eugene Asahara (BI/analytics expert, author, [Redacted City]) and asked for the number of physical books on the shelves in his home office (a non-master bedroom). Grok first searched public sources (LinkedIn, blog, property records, author pages) and correctly found no direct public data.  
 
