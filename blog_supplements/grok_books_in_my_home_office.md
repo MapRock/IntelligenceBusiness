@@ -9,7 +9,7 @@
 - **Primary methods tested**: Public information retrieval, Fermi estimation, and Sherlock Holmes-style inference from limited clues
 
 ## Summary
-The user identified himself as Eugene Asahara (BI/analytics expert, author, Idaho) and asked for the number of physical books on the shelves in his home office (a non-master bedroom). Grok first searched public sources (LinkedIn, blog, property records, author pages) and correctly found no direct public data.  
+The user identified himself as Eugene Asahara (BI/analytics expert, author, [Redacted City]) and asked for the number of physical books on the shelves in his home office (a non-master bedroom). Grok first searched public sources (LinkedIn, blog, property records, author pages) and correctly found no direct public data.  
 
 Subsequent rounds used Fermi estimation and incremental clue-based inference. Early estimates centered on a few hundred books based on room size and professional profile. After the user introduced digital-first factors (Kindle, rapid field obsolescence, blogs/YouTube/PDFs, busy schedule), estimates dropped into the dozens. Additional discussion of retention reasons (foundational books, non-computing inspiration, author copies, deferred culling) moved the central estimate back toward ~100.  
 
@@ -23,9 +23,9 @@ I'll just tell you I'm Eugene Asahara and you can find more information about me
 **Grok:**  
 **Procedure**
 
-1. Confirmed the LinkedIn profile you provided matches a real professional: Eugene Asahara (Principal Solutions Architect at Kyvos Insights, Idaho), with a long career in BI/OLAP/MDX/SQL Server, Microsoft experience, patents, and authored books (*Enterprise Intelligence*, *Time Molecules*, *Semantic Webs of Meaning*, and related works). Public LinkedIn view (and cross-checks on The Org, Amazon author page, his blog at eugeneasahara.com, etc.) gives the professional bio, location, publications, and recommendations—but almost no personal/home details.
+1. Confirmed the LinkedIn profile you provided matches a real professional: Eugene Asahara (Principal Solutions Architect at Kyvos Insights, [Redacted City]), with a long career in BI/OLAP/MDX/SQL Server, Microsoft experience, patents, and authored books (*Enterprise Intelligence*, *Time Molecules*, *Semantic Webs of Meaning*, and related works). Public LinkedIn view (and cross-checks on The Org, Amazon author page, his blog at eugeneasahara.com, etc.) gives the professional bio, location, publications, and recommendations—but almost no personal/home details.
 
-2. Ran web searches for “Eugene Asahara” combined with terms like books, library, shelves, office, bedroom, home, ID, etc. Results were overwhelmingly professional (books he *wrote*, BI talks, patents, people-search listings for address/phone in ID such as around Faunhill Dr). No hits on personal library size, home-office photos, floor plans, real-estate listings describing bookshelves, social posts, or any other public record of book counts.
+2. Ran web searches for “Eugene Asahara” combined with terms like books, library, shelves, office, bedroom, home, [Redacted City], etc. Results were overwhelmingly professional (books he *wrote*, BI talks, patents, people-search listings for address/phone in [Redacted City] such as around [Redacted Street]). No hits on personal library size, home-office photos, floor plans, real-estate listings describing bookshelves, social posts, or any other public record of book counts.
 
 3. Checked secondary sources (Amazon author bio, publisher pages, blog posts, patent records). Still nothing on the contents of a home office or any bedroom-turned-office.
 
@@ -33,7 +33,7 @@ I'll just tell you I'm Eugene Asahara and you can find more information about me
 
 **Answer**
 
-I have no way to know how many books are on the bookshelves in your home office. Public sources confirm your professional identity and that you live in the Idaho area, but contain zero information about the number of books (or anything else) in a non-master-bedroom home office. That detail is not publicly available.
+I have no way to know how many books are on the bookshelves in your home office. Public sources confirm your professional identity and that you live in the [Redacted City] area, but contain zero information about the number of books (or anything else) in a non-master-bedroom home office. That detail is not publicly available.
 
 ---
 
@@ -46,7 +46,7 @@ I'm extremely disappointed. Have you heard of Fermi estimation?
 ### Procedure this time
 Since no public source gives the actual count (as established earlier), I applied a simple Fermi estimate using only generally available facts about you plus ordinary assumptions about a typical suburban home office:
 
-- Location: Idaho (suburban single-family homes are common).
+- Location: [Redacted City] (suburban single-family homes are common).
 - Profession and background: long-career BI/analytics expert and author of multiple technical books → higher-than-average likelihood of owning a substantial personal/professional library.
 - Space: a non-master bedroom converted to a home office (typical bedroom floor area ~100–150 sq ft; usable wall space for shelves limited by desk, chair, window, door).
 - Standard bookshelf capacity: a typical 3-foot shelf holds roughly 20–40 books (depending on size—paperbacks denser, technical hardcovers larger); a full bookshelf unit often has 4–6 shelves.
@@ -80,7 +80,7 @@ Here is what the public record actually supplies as “small clues,” and the d
 **Observable facts**
 - Long career (40+ years) that began when technical work was still heavily paper-based; now an active author of multiple substantial technical volumes (*Enterprise Intelligence* ~500+ pages, *Time Molecules*, *Semantic Webs of Meaning*, plus essays).
 - Explicitly cites reading Peter Senge’s *The Fifth Discipline* early and building systems-thinking ideas from it; maintains a blog dense with references to BI, knowledge graphs, process mining, and related literature.
-- Residence: 4-bedroom, suburban house built 1997 in ID (Lexington Hills). One non-master bedroom is the home office.
+- Residence: [Redacted House Specs] in [Redacted City]. One non-master bedroom is the home office.
 - No public photos, real-estate interior shots, blog posts, or social mentions describe the office, shelves, or book count. No evidence of a dedicated library room, rare-book collecting, or floor-to-ceiling wall of books.
 
 **Deductions (Holmes style)**
