@@ -34,6 +34,22 @@ Its central estimate was **100–150 books**, with a wider plausible range of **
 
 **No prior reasoning episodes were provided to Grok**, so this tests prompting, not whether retrieving stored reasoning histories improves an LLM's estimates.
 
+### [Grok — Initial 30 Questions for Estimating a Home-Office Book Collection](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_ask_30_questions_1.md)
+
+An initial experiment asking Grok 4.7 to generate 30 questions that could help estimate the number of physical books in my home office. The request encouraged creativity but provided no structured methodology. Grok produced a comprehensive set of questions, many focused on shelving dimensions, book density, storage arrangements, acquisition rates, and direct or indirect counting. Although reasonable, several questions approached the same underlying factors from slightly different directions. The experiment established a baseline for examining the difference between generating many questions and discovering genuinely different relationships that could influence an estimate.
+
+### [Creative Question Generation — A Generalized 30-Question Prompt](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/abductive_calculation_30_creative_questions_prompt.md)
+
+Following the initial experiment, I asked ChatGPT to formulate a domain-independent prompt designed to encourage broader exploration before selecting 30 questions. The prompt asks the model to consider alternative explanations, explore conceptual relationships, challenge assumptions, and identify questions that could expose important missing information. It deliberately avoids supplying domain-specific clues such as Kindle, historical book accumulation, or alternative storage. The objective is to investigate whether general instructions can elicit more imaginative and consequential questions without telling the model which factors to discover.
+
+### [Grok — 30 Questions Using the Generalized Creative Prompt](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_ask_30_creative_questions.md)
+
+A follow-up experiment conducted in a fresh private Grok 4.7 session using the generalized prompt. The only problem-specific input was **“number of physical books in my home office.”** Grok again generated 30 questions, but this time explored a broader range of possible influences, including digital substitution, retention preferences, inherited collections, competing physical media, household circumstances, environmental constraints, and changes in ownership over time.
+
+Of particular interest was Grok's identification of digital reading without being explicitly prompted to consider it, and its recognition that adopting digital formats does not necessarily imply disposing of existing physical books. The experiment suggests that generalized prompting can broaden the relationships an LLM considers without explicitly supplying the relevant factors. However, it does not establish that the questions improve the resulting numerical estimate or that the model has discovered fundamentally new relationships.
+
+These experiments lead toward a larger question: how might an intelligence creatively discover relevant relationships, and how could insights from previous human or AI problem-solving experiences be generalized and reused when investigating entirely different problems?
+
 ## About the material
 
 The transcripts and model responses are presented as records of exploratory tests. Numerical estimates, inferred relationships, and claims made by the AI systems should be treated as provisional unless independently verified. The broader research question is whether **preserving how a problem was approached—including unsuccessful hypotheses and missed questions—can improve reasoning on future problems**.
