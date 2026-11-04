@@ -1,0 +1,31 @@
+# Blog Supplements — Enterprise Intelligence
+
+This directory contains supplementary material for articles on [eugeneasahara.com](https://eugeneasahara.com/) concerning **Enterprise Intelligence**, the integration of business intelligence, knowledge graphs, AI, and other reasoning methods. The broader foundation is described in my book, [*Enterprise Intelligence: Bridging the Gaps between Wisdom, Business Intelligence, Knowledge Graphs, and Artificial Intelligence*](https://technicspub.com/enterprise-intelligence/), published by Technics Publications.
+
+The supplements preserve experiments, AI-generated responses, and prompts that would be cumbersome to reproduce in full within a blog article. They make it possible to examine the reasoning paths, assumptions, and limitations behind the examples rather than relying only on a summary of the results.
+
+## Abductive Calculation: Reasoning with Imperfect Information
+
+The files currently documented here accompany my article **“Abductive Calculation: Reasoning with Imperfect Information.”** The article considers how an intelligence system can estimate a quantity that is not directly known and for which no predefined calculation may exist. It examines Fermi estimation, reasoning by analogy, provisional relationships, multiple estimation paths, and the importance of keeping hypotheses separate from established facts.
+
+These examples are **reasoning experiments, not verified measurements**. Their purpose is to expose how an AI approaches an unfamiliar question, including where its assumptions succeed, fail, or change as additional information becomes available.
+
+### [Gemini — Fermi Estimation of Inari Makers in Greater Boise](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/gemini_fermi.md)
+
+Google Gemini's response to a deliberately obscure question: how many people in the greater Boise area might make inari on a particular day? The transcript shows its Fermi-style decomposition into population, likely participation, cooking frequency, and ingredient availability, with a proposed estimate and supporting assumptions.
+
+### [Grok — Fermi Estimation of Inari Makers in Greater Boise](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_fermi.md)
+
+Grok's response to the same inari question. It explains why the problem calls for a Fermi estimate and builds a rough answer from population, demographics, food preparation habits, and possible restaurant activity. The two inari files allow readers to compare how different models construct estimates from an answer that is not available for direct lookup.
+
+### [Grok — Estimating the Books in My Home Office](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_books_in_my_home_office.md)
+
+An extended experiment in which Grok was asked to estimate the number of physical books on my home-office shelves using limited information. It initially declined to estimate because no direct public answer was available. Once prompted to use Fermi estimation, it produced a reasonable first approximation, but later clues about digital reading habits and book retention shifted its estimates away from the actual count of 300. The preserved exchange illustrates the dangers of over-weighting plausible clues, neglecting alternative explanations, and confusing current acquisition habits with an accumulated collection.
+
+### [Abductive Calculation — A Reasoning Prompt](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/abductive_calculation_prompt.md)
+
+I asked ChatGPT to write this prompt because I wanted it to tell me **what instructions would help it perform this kind of reasoning**. The request arose from the experiments: rather than expecting a model to discover a suitable approach spontaneously, what guidance would help it brainstorm relevant factors, construct multiple possible explanations and calculational paths, examine shared assumptions, incorporate new clues without overreacting, and identify what additional information would reduce uncertainty? The file captures the model's proposed working instructions, not a claim that the prompt has been proven to improve every LLM or every estimation problem.
+
+## About the material
+
+The transcripts and model responses are presented as records of exploratory tests. Numerical estimates, inferred relationships, and claims made by the AI systems should be treated as provisional unless independently verified. The broader research question is whether **preserving how a problem was approached—including unsuccessful hypotheses and missed questions—can improve reasoning on future problems**.
