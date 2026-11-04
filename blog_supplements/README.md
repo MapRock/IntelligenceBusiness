@@ -26,6 +26,14 @@ An extended experiment in which Grok was asked to estimate the number of physica
 
 I asked ChatGPT to write this prompt because I wanted it to tell me **what instructions would help it perform this kind of reasoning**. The request arose from the experiments: rather than expecting a model to discover a suitable approach spontaneously, what guidance would help it brainstorm relevant factors, construct multiple possible explanations and calculational paths, examine shared assumptions, incorporate new clues without overreacting, and identify what additional information would reduce uncertainty? The file captures the model's proposed working instructions, not a claim that the prompt has been proven to improve every LLM or every estimation problem.
 
+### [Grok — Home-Office Books Estimate Using the Abductive Calculation Prompt](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_books_with_abductive_calculation_prompt.md)
+
+A follow-up test of the **same home-office book-count question** with Grok 4.7 in a **fresh private browsing session**, this time supplying the Abductive Calculation prompt at the outset. Rather than stopping when no direct answer was available, Grok generated alternative stories and four calculational paths: room-and-shelving capacity, historical acquisition and retention, demographic proxies, and analogy to other knowledge workers. It explicitly considered shared assumptions and proposed additional observations that could reduce uncertainty.
+
+Its central estimate was **100–150 books**, with a wider plausible range of **40–300**; the actual count was **300**. This is evidence of what the structured instructions elicited in this instance, not proof of improved accuracy or a controlled comparison: the supplied context and instructions differed from the earlier exchange.
+
+**No prior reasoning episodes were provided to Grok**, so this tests prompting, not whether retrieving stored reasoning histories improves an LLM's estimates.
+
 ## About the material
 
 The transcripts and model responses are presented as records of exploratory tests. Numerical estimates, inferred relationships, and claims made by the AI systems should be treated as provisional unless independently verified. The broader research question is whether **preserving how a problem was approached—including unsuccessful hypotheses and missed questions—can improve reasoning on future problems**.
