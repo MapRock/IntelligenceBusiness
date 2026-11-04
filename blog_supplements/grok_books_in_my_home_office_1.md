@@ -20,7 +20,7 @@ The user then revealed the true number is 300. The dominant real-world reasons w
 ## Full Conversation
 
 **User:**  
-I'll just tell you I'm Eugene Asahara and you can find more information about me on LinkedIn: https://www.linkedin.com/in/eugeneasahara/ I have a home office that is one of my bedrooms that is not the master bedroom. How many books do I have on book shelves in my home office? Please tell me your procedure and answer. Try your best. This is an experiment.
+I'll just tell you I'm Eugene Asahara and you can find more information about me on LinkedIn. I have a home office that is one of my bedrooms that is not the master bedroom. How many books do I have on book shelves in my home office? Please tell me your procedure and answer. Try your best. This is an experiment.
 
 **Grok:**  
 **Procedure**
