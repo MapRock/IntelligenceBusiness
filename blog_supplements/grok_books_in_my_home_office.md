@@ -87,7 +87,7 @@ Here is what the public record actually supplies as “small clues,” and the d
 
 **Deductions (Holmes style)**
 - An author and systems thinker of this type almost always keeps physical copies of his own books, key reference works from the OLAP/BI/systems canon, and a selection of the literature he cites. That is a curated professional library, not a general household collection.
-- A secondary bedroom in a [redacted house specs] sq ft house is typically ~10×11 to 12×12 ft. After placing a desk, chair, monitor(s), and leaving floor space, usable wall length for shelving is limited—most realistically one or two standard bookcases (or equivalent wall-mounted shelves), not wall-to-wall custom millwork.
+-  bedroom in a [redacted house specs] sq ft house is typically ~10×11 to 12×12 ft. After placing a desk, chair, monitor(s), and leaving floor space, usable wall length for shelving is limited—most realistically one or two standard bookcases (or equivalent wall-mounted shelves), not wall-to-wall custom millwork.
 - Age and career span favor retention of physical books over a purely digital setup, but the same professional profile also favors selectivity: he keeps what he uses for writing and reference rather than accumulating everything.
 - Absence of any public signal of an unusually large collection is itself a weak negative clue; people with dramatic home libraries sometimes show them.
 
@@ -120,7 +120,7 @@ These are useful constraints. They systematically push the physical-book count d
 - Author copies of his own titles (Enterprise Intelligence, Time Molecules, Semantic Webs of Meaning, any earlier or foreign editions): roughly 5–15 physical books.
 - A small set of durable classics or personal favorites that have not been fully replaced by digital equivalents (e.g., a copy of *The Fifth Discipline*, a couple of older OLAP/SQL Server references, perhaps a systems-thinking or knowledge-graph foundational text): 10–30.
 - Miscellaneous remaining paper books that have not yet been discarded or that arrived as gifts/review copies: 5–25.
-- Space and habit: in a secondary bedroom office the practical shelving is still limited, but the stronger force is now demand-side (he simply does not keep many paper volumes).
+- Space and habit: in  bedroom office the practical shelving is still limited, but the stronger force is now demand-side (he simply does not keep many paper volumes).
 
 Multiplying the mid-range pieces gives a central estimate around **40–60 physical books** on the shelves.  
 Plausible range: **20–100**.  
@@ -151,7 +151,7 @@ I took the four factors you supplied as given examples of the kind of informatio
 - Authorship: publishers normally supply author copies. A writer of several substantial technical books is likely to keep a modest number of those physical copies (and perhaps a few foreign-edition or review copies).
 - Career span and age [Reacted age]: the earliest decades were paper-heavy, so a small residue of older reference volumes or personal favorites may survive even if most later material is digital.
 - House and room: [Redacted house specs]; the office is a non-master bedroom. After desk, monitors, and circulation space, usable shelf length is limited (typically one or two standard bookcases at most).
-- Move history: multiple prior addresses appear in public records. People often cull physical books when they move; repeated moves favor a smaller retained collection.
+- Move history: [redacted]. People often cull physical books when they move; repeated moves favor a smaller retained collection.
 - Digital writing practice: heavy blog output and reliance on online sources for current material further reduce the need for a large paper reference shelf.
 - No public signals of collecting: nothing in the visible record suggests rare-book interest, a general literary library, or wall-to-wall custom shelving.
 
