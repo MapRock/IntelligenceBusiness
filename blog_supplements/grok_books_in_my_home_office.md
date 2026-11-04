@@ -87,7 +87,7 @@ Here is what the public record actually supplies as “small clues,” and the d
 
 **Deductions (Holmes style)**
 - An author and systems thinker of this type almost always keeps physical copies of his own books, key reference works from the OLAP/BI/systems canon, and a selection of the literature he cites. That is a curated professional library, not a general household collection.
-- A secondary bedroom in a 1990s 2,200 sq ft house is typically ~10×11 to 12×12 ft. After placing a desk, chair, monitor(s), and leaving floor space, usable wall length for shelving is limited—most realistically one or two standard bookcases (or equivalent wall-mounted shelves), not wall-to-wall custom millwork.
+- A secondary bedroom in a [redacted house specs] sq ft house is typically ~10×11 to 12×12 ft. After placing a desk, chair, monitor(s), and leaving floor space, usable wall length for shelving is limited—most realistically one or two standard bookcases (or equivalent wall-mounted shelves), not wall-to-wall custom millwork.
 - Age and career span favor retention of physical books over a purely digital setup, but the same professional profile also favors selectivity: he keeps what he uses for writing and reference rather than accumulating everything.
 - Absence of any public signal of an unusually large collection is itself a weak negative clue; people with dramatic home libraries sometimes show them.
 
@@ -230,7 +230,7 @@ The 300 figure sits at the high end of the broader ranges that were floated befo
 The figure from the bedroom-scale is still a good example of Fermi estimation. So my point is somewhat made.
 
 **Grok:**  
-Yes. The bedroom-scale constraint was one of the more robust pieces of the Fermi chain: once you accept a non-master bedroom in a roughly 2,200 sq ft 1990s house, the available wall length after a desk and normal circulation only supports a limited number of ordinary bookcases. That physical upper bound stayed useful even while the digital-habit assumptions pulled the estimate too low.
+Yes. The bedroom-scale constraint was one of the more robust pieces of the Fermi chain: once you accept a non-master bedroom in a roughly [redacted house specs] house, the available wall length after a desk and normal circulation only supports a limited number of ordinary bookcases. That physical upper bound stayed useful even while the digital-habit assumptions pulled the estimate too low.
 
 What the experiment illustrated is that a single salient modern signal (tech-savvy, Kindle, fast-moving field, “rarely buy paper”) can dominate the reasoning and crowd out prosaic household constraints (no spare storage, residual lookup value, incomplete culling). Those household constraints turned out to be the binding ones, and they are exactly the sort of thing that is hard to observe from the outside. The room-scale Fermi step still anchored the high end of the possible range; the other factors mainly affected where inside that range the guess landed.
 
