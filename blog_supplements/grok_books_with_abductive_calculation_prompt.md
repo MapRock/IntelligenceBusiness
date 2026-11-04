@@ -44,6 +44,8 @@ For each story, identify its essential assumptions, the observations it explains
 Do not treat an internally coherent story as necessarily true. Consider competing stories that explain the same observations differently.  
 
 ### 4. Construct candidate calculational paths  
+Before constructing calculational paths, consider which families of reasoning methodology are appropriate for this particular problem. These may include Fermi estimation, reference-class or base-rate estimation, informal Bayesian updating, analogical reasoning, proxy or indirect measurement, inverse reasoning, historical accumulation and retention models, causal inference, and opportunistic measurement. More than one methodology may be appropriate, and a new relationship may need to be constructed by combining elements of several. Do not default to Fermi estimation simply because the question calls for an approximate numerical answer. Explain briefly why each selected methodology fits the nature of the unknown and the available evidence.
+
 Try to construct two to four materially different paths to the unknown, where defensible. Possibilities include Fermi decomposition, demand divided by capacity, representative-unit scaling, economic throughput, physical measurement, proxy relationships, inverse reasoning, and adaptation of previous reasoning episodes.  
 
 For each candidate path, identify its intermediate quantities, proposed relationships, assumptions, and sources of evidence. Explain briefly why the relationship is plausible.  
