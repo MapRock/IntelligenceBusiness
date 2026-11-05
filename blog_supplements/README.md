@@ -34,7 +34,7 @@ Its central estimate was **100–150 books**, with a wider plausible range of **
 
 **No prior reasoning episodes were provided to Grok**, so this tests prompting, not whether retrieving stored reasoning histories improves an LLM's estimates.
 
-### Eliciting Creative Questions from AI
+## Eliciting Creative Questions from AI
 
 These experiments extend [Abductive Calculation](https://eugeneasahara.com/2026/11/04/abductive-calculation/) by exploring whether an LLM can be prompted to discover creative questions rather than simply answer questions presented to it. The premise is that creativity often arises through analogy—recognizing relationships from other experiences and applying them to a new problem. Given the enormous breadth of knowledge represented in LLMs, they potentially have an extraordinary pool of inspiration from which to draw.
 
@@ -46,15 +46,15 @@ The experiments follow three steps:
 
 The objective is not simply to generate more questions, but to discover **questions that open new investigative paths**. The comparison illustrates how prompting can influence exploratory reasoning, while leaving open whether those questions ultimately improve the accuracy of the resulting estimates.
 
-#### [Grok — Asking 30 Questions, First Iteration](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_ask_30_questions_1.md)
+### [Grok — Asking 30 Questions, First Iteration](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_ask_30_questions_1.md)
 
 The first experiment asked Grok 4.7 to generate 30 questions that would help estimate the number of physical books in my home office. The instruction was deliberately simple: ask 30 questions, including some creative ones, before attempting an estimate. Grok produced a reasonable questionnaire, but most questions focused on obvious measurements and direct proxies, such as shelf dimensions, bookcase counts, storage capacity, and purchasing habits. Although some questions explored less direct indicators, the result largely demonstrated conventional information gathering rather than the discovery of unexpected relationships.
 
-#### [Creative Question Generation — The Structured Prompt](https://github.com/MapRock/IntelligenceBusiness/commit/b6a67d66240d8089ee0b49bed4cb672269e7e6f1)
+### [Creative Question Generation — The Structured Prompt](https://github.com/MapRock/IntelligenceBusiness/commit/b6a67d66240d8089ee0b49bed4cb672269e7e6f1)
 
 Following the first experiment, I worked with ChatGPT to develop a more deliberate prompt for eliciting creative questions from an LLM. Rather than merely requesting creativity, the prompt instructs the model to explore multiple possible explanations, investigate less obvious relationships, challenge assumptions, and identify questions capable of separating competing hypotheses. It also requires an explanation of why each question was selected and how different answers might affect the eventual estimate. The objective is to encourage broader exploration before committing to a calculational approach.
 
-#### [Grok — Asking 30 Creative Questions, Second Iteration](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_ask_30_creative_questions.md)
+### [Grok — Asking 30 Creative Questions, Second Iteration](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_ask_30_creative_questions.md)
 
 The second experiment presented Grok 4.7 with the same home-office book-count problem, this time using the structured creative-question prompt. The result was substantially more exploratory. In addition to physical capacity, Grok investigated historical accumulation, book retention, digital substitution, professional needs, household influences, and other indirect relationships. Importantly, it raised questions about whether current digital reading habits accurately reflect a physical collection accumulated over decades—the very assumption that had misled its earlier estimation attempts. Not every question was particularly creative, and no subsequent estimate was tested, but the comparison illustrates how more deliberate prompting can elicit a broader and potentially more revealing investigation. The two iterations provide a concrete starting point for studying creative question generation as a component of Abductive Calculation.
 
