@@ -1,5 +1,5 @@
 
-# Abductive Calculation: Number of Books in Eugene Asahara’s Home Office
+# Abductive Calculation: Number of Books in My Home Office
 
 **Metadata**  
 - **Date of estimate**: 4 November 2026  
