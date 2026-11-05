@@ -34,7 +34,17 @@ Its central estimate was **100–150 books**, with a wider plausible range of **
 
 **No prior reasoning episodes were provided to Grok**, so this tests prompting, not whether retrieving stored reasoning histories improves an LLM's estimates.
 
-## Eliciting Creative Questions
+## Eliciting Creative Questions from AI
+
+These experiments extend [Abductive Calculation](https://eugeneasahara.com/2026/11/04/abductive-calculation/) by exploring whether an LLM can be prompted to discover creative questions rather than simply answer questions presented to it. The premise is that creativity often arises through analogy—recognizing relationships from other experiences and applying them to a new problem. Given the enormous breadth of knowledge represented in LLMs, they potentially have an extraordinary pool of inspiration from which to draw.
+
+The experiments follow three steps:
+
+1. **First iteration — Simple prompting:** Ask Grok to generate 30 questions, including creative ones, to estimate the number of books in my home office. The results were largely conventional.
+2. **Developing a structured prompt:** Work with ChatGPT to design instructions encouraging exploration of alternative explanations, non-obvious relationships, and competing hypotheses.
+3. **Second iteration — Structured prompting:** Give Grok the same problem using the improved prompt. The resulting questions explored a broader range of relationships, including ones that could have exposed errors in its earlier estimates.
+
+The objective is not simply to generate more questions, but to discover **questions that open new investigative paths**. The comparison illustrates how prompting can influence exploratory reasoning, while leaving open whether those questions ultimately improve the accuracy of the resulting estimates.
 
 ### [Grok — Asking 30 Questions, First Iteration](https://github.com/MapRock/IntelligenceBusiness/blob/main/blog_supplements/grok_ask_30_questions_1.md)
 
