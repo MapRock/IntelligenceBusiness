@@ -1,4 +1,4 @@
-# Fermi Estimation Experiment: Books in Eugene Asahara’s Home Office
+# Fermi Estimation Experiment: Books in My Home Office
 
 ## Metadata
 - **Date of conversation**: November 3, 2026
