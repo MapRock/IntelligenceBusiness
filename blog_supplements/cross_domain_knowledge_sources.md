@@ -1,0 +1,47 @@
+# Cross-Domain Knowledge: Four Complementary Paths to Creative Questions
+
+*Supplement to [Eliciting Creative Questions from AI for Abductive Calculation](https://eugeneasahara.com/).*
+
+The accompanying four illustrations examine **how knowledge from different domains becomes connected**. Cross-domain thinking is one source of creative questions: a relationship familiar in one setting may suggest a question, explanation, or calculational pathway in another. But the four approaches do not acquire, organize, or connect knowledge in the same way. Their differences help explain why combining them may expose possibilities that any one approach overlooks.
+
+The four images are collected in the [supplement's images folder](https://github.com/MapRock/IntelligenceBusiness/tree/main/blog_supplements/images). **Image links below are placeholders until the exact uploaded filenames are confirmed.** Replace each `REPLACE_WITH_...` filename with its counterpart in that folder; these links are relative to `blog_supplements/`.
+
+## 1. Large Language Models: Diverse Sources, One Learned Model
+
+[**View the LLM illustration**](images/REPLACE_WITH_LLM_IMAGE_FILENAME.png)
+
+LLMs learn from documented knowledge spanning many domains and forms of expression: books, papers, articles, blogs, code, forums, and, for multimodal models, visual and other media. Rather than independently consulting every original document for each question, the model draws on an integrated learned representation. Its breadth and flexibility make it possible to propose unexpected analogies and intermediate relationships between subjects that appear unrelated.
+
+The trade-off is that those learned relationships are mostly implicit, difficult to inspect directly, and potentially outdated or mistaken. An LLM can creatively propose a connection without establishing that the connection actually holds.
+
+## 2. People: Distributed Expertise, Shared Culture, and Conversation
+
+[**View the human-knowledge illustration**](images/REPLACE_WITH_PEOPLE_IMAGE_FILENAME.png)
+
+Human knowledge is not concentrated in a single model. It is distributed among people with different combinations of expertise and lived experience. Teams bring disciplines together; generalists and polymaths connect some domains within one mind. Shared culture, language, and communication make knowledge exchange possible, even though what one person communicates is never perfectly assimilated by another. That imperfect exchange—including tangents and half-formed ideas—can generate unexpected questions.
+
+A relatively small portion of human knowledge is deliberately published in the books, articles, research, and online material used to train models. Much operational, contextual, and tacit knowledge remains in people's experience. The trade-off is that bringing people together, communicating, and preserving their knowledge can be slow and costly.
+
+## 3. ISG and TCW: Connections Emerging from Enterprise Activity
+
+[**View the ISG/TCW illustration**](images/REPLACE_WITH_ISG_TCW_IMAGE_FILENAME.png)
+
+Enterprises are organized around domains and processes. Some processes cross departmental boundaries; others interact through defined interfaces. Master data, common semantics, and especially time offer ways to relate observations across those boundaries. A high-performance semantic layer makes governed measures and dimensions available for repeated analytical investigations.
+
+The **Insight Function Array (IFA)** observes patterns in the dataframes produced by analysts' and knowledge workers' BI activity. The **Insight Space Graph (ISG)** preserves noteworthy observations **whether the worker noticed them, noticed but did not care, or never consciously considered them**. The **Tuple Correlation Web (TCW)** connects qualified metrics through measured relationships, including correlations and time-lagged associations. Both are inspectable graphs; LLMs can propose possible intermediate relationships for further investigation.
+
+Their advantage is grounding in enterprise activity and data. Their limitations include dependence on semantic quality, available observations, computational effort to discover relationships, and the fact that correlation is not proof of causation.
+
+## 4. Knowledge Graphs: Explicit Links Across Domains
+
+[**View the knowledge-graph / Wikidata illustration**](images/REPLACE_WITH_KG_WIKIDATA_IMAGE_FILENAME.png)
+
+Knowledge graphs represent entities and relationships explicitly. **Wikidata** demonstrates how crowdsourced knowledge from many domains can share persistent identifiers—such as Wikidata item IDs and corresponding IRIs—so that a person, publication, organization, place, or event can be linked across subject boundaries. These links are inspectable and traversable: a graph query can follow an explicit path rather than asking an LLM to reconstruct the relationship from its learned representations.
+
+Enterprise knowledge graphs apply the same principle within a usually narrower organizational scope. Their strengths are explicit semantics, traceability, and relatively efficient targeted traversal. Their limitation is coverage: they can expose only relationships that have been entered, derived, or otherwise made available in the graph. They do not automatically possess the flexible associative breadth of an LLM.
+
+## Putting the Four Together
+
+The purpose is not to choose one winner. **LLMs integrate broad documented patterns; people contribute diverse and often undocumented experience; ISG/TCW make enterprise observations and measured relationships available across domains; and knowledge graphs supply explicit, traversable connections.** Together, they enlarge the space of relationships an intelligence can consider.
+
+For **Abductive Calculation**, the next step is to turn a promising connection into a *question*: Could this relationship provide another way to estimate the unknown quantity? Which observation or calculation would test it? And is obtaining that evidence worth the effort? The creative connection is an investigative starting point, not an established answer.
