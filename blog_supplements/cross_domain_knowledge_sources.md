@@ -4,7 +4,7 @@
 
 The accompanying four illustrations examine **how knowledge from different domains becomes connected**. Cross-domain thinking is one source of creative questions: a relationship familiar in one setting may suggest a question, explanation, or calculational pathway in another. But the four approaches do not acquire, organize, or connect knowledge in the same way. Their differences help explain why combining them may expose possibilities that any one approach overlooks.
 
-The four images are collected in the [supplement's images folder](https://github.com/MapRock/IntelligenceBusiness/tree/main/blog_supplements/images). **Image links below are placeholders until the exact uploaded filenames are confirmed.** Replace each `REPLACE_WITH_...` filename with its counterpart in that folder; these links are relative to `blog_supplements/`.
+The four images are collected in the [images](https://github.com/MapRock/IntelligenceBusiness/tree/main/blog_supplements/images) folder. 
 
 ## 1. Large Language Models: Diverse Sources, One Learned Model
 
