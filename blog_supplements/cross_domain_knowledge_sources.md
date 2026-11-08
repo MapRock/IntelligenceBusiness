@@ -8,7 +8,7 @@ The four images are collected in the [supplement's images folder](https://github
 
 ## 1. Large Language Models: Diverse Sources, One Learned Model
 
-[**View the LLM illustration**](images/REPLACE_WITH_LLM_IMAGE_FILENAME.png)
+[**View the LLM illustration**](images/cross_domain_llm.png)
 
 LLMs learn from documented knowledge spanning many domains and forms of expression: books, papers, articles, blogs, code, forums, and, for multimodal models, visual and other media. Rather than independently consulting every original document for each question, the model draws on an integrated learned representation. Its breadth and flexibility make it possible to propose unexpected analogies and intermediate relationships between subjects that appear unrelated.
 
@@ -16,7 +16,7 @@ The trade-off is that those learned relationships are mostly implicit, difficult
 
 ## 2. People: Distributed Expertise, Shared Culture, and Conversation
 
-[**View the human-knowledge illustration**](images/REPLACE_WITH_PEOPLE_IMAGE_FILENAME.png)
+[**View the human-knowledge illustration**](images/cross_domain_peoplepng)
 
 Human knowledge is not concentrated in a single model. It is distributed among people with different combinations of expertise and lived experience. Teams bring disciplines together; generalists and polymaths connect some domains within one mind. Shared culture, language, and communication make knowledge exchange possible, even though what one person communicates is never perfectly assimilated by another. That imperfect exchange—including tangents and half-formed ideas—can generate unexpected questions.
 
@@ -24,7 +24,7 @@ A relatively small portion of human knowledge is deliberately published in the b
 
 ## 3. ISG and TCW: Connections Emerging from Enterprise Activity
 
-[**View the ISG/TCW illustration**](images/REPLACE_WITH_ISG_TCW_IMAGE_FILENAME.png)
+[**View the ISG/TCW illustration**](images/cross_domain_isg_tcw.png)
 
 Enterprises are organized around domains and processes. Some processes cross departmental boundaries; others interact through defined interfaces. Master data, common semantics, and especially time offer ways to relate observations across those boundaries. A high-performance semantic layer makes governed measures and dimensions available for repeated analytical investigations.
 
@@ -34,7 +34,7 @@ Their advantage is grounding in enterprise activity and data. Their limitations 
 
 ## 4. Knowledge Graphs: Explicit Links Across Domains
 
-[**View the knowledge-graph / Wikidata illustration**](images/REPLACE_WITH_KG_WIKIDATA_IMAGE_FILENAME.png)
+[**View the knowledge-graph / Wikidata illustration**](images/cross_domain_kg_wikidata.png)
 
 Knowledge graphs represent entities and relationships explicitly. **Wikidata** demonstrates how crowdsourced knowledge from many domains can share persistent identifiers—such as Wikidata item IDs and corresponding IRIs—so that a person, publication, organization, place, or event can be linked across subject boundaries. These links are inspectable and traversable: a graph query can follow an explicit path rather than asking an LLM to reconstruct the relationship from its learned representations.
 
