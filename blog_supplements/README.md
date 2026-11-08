@@ -58,8 +58,7 @@ Following the first experiment, I worked with ChatGPT to develop a more delibera
 
 The second experiment presented Grok 4.7 with the same home-office book-count problem, this time using the structured creative-question prompt. The result was substantially more exploratory. In addition to physical capacity, Grok investigated historical accumulation, book retention, digital substitution, professional needs, household influences, and other indirect relationships. Importantly, it raised questions about whether current digital reading habits accurately reflect a physical collection accumulated over decades—the very assumption that had misled its earlier estimation attempts. Not every question was particularly creative, and no subsequent estimate was tested, but the comparison illustrates how more deliberate prompting can elicit a broader and potentially more revealing investigation. The two iterations provide a concrete starting point for studying creative question generation as a component of Abductive Calculation.
 
-
-## [Cross-Domain Knowledge — Four Sources of Creative Questions](cross_domain_knowledge_sources.md)
+### [Cross-Domain Knowledge — Four Sources of Creative Questions](cross_domain_knowledge_sources.md)
 
 Four illustrated explanations of how LLMs, distributed human knowledge, the Insight Space Graph and Tuple Correlation Web (ISG/TCW), and knowledge graphs such as Wikidata enable connections across different domains. Each source integrates knowledge differently: LLMs through broad learned representations, humans through diverse expertise and shared culture, ISG/TCW through analytical observations and measured enterprise relationships, and knowledge graphs through explicit, traversable links.
 
