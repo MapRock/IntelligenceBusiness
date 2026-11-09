@@ -1,10 +1,10 @@
-# Cross-Domain Knowledge: Four Complementary Paths to Creative Questions
+# Cross-Domain Knowledge: Five Complementary Paths to Creative Questions
 
 *Supplement to [Eliciting Creative Questions from AI for Abductive Calculation](https://eugeneasahara.com/).*
 
 The accompanying four illustrations examine **how knowledge from different domains becomes connected**. Cross-domain thinking is one source of creative questions: a relationship familiar in one setting may suggest a question, explanation, or calculational pathway in another. But the four approaches do not acquire, organize, or connect knowledge in the same way. Their differences help explain why combining them may expose possibilities that any one approach overlooks.
 
-The four images are collected in the [images](https://github.com/MapRock/IntelligenceBusiness/tree/main/blog_supplements/images) folder. 
+The five images are collected in the [images](https://github.com/MapRock/IntelligenceBusiness/tree/main/blog_supplements/images) folder. 
 
 ## 1. Large Language Models: Diverse Sources, One Learned Model
 
