@@ -40,6 +40,16 @@ Knowledge graphs represent entities and relationships explicitly. **Wikidata** d
 
 Enterprise knowledge graphs apply the same principle within a usually narrower organizational scope. Their strengths are explicit semantics, traceability, and relatively efficient targeted traversal. Their limitation is coverage: they can expose only relationships that have been entered, derived, or otherwise made available in the graph. They do not automatically possess the flexible associative breadth of an LLM.
 
+## 5. Time Molecules: A Shared Event Grammar Across Domains
+
+[**View the Time Molecules illustration**](images/cross_domain_time_molecules.png)
+
+[**Time Molecules**](https://github.com/MapRock/TimeMolecules/blob/main/README.md) takes a different route to cross-domain knowledge: it abstracts heterogeneous real-world activity into events with a common core—**DateTime, Event Type, CaseID**, and categorized **event and case properties**. An order, shipment, support ticket, hospital treatment, equipment alarm, or AI-agent tool call can contribute to the same general event representation, without pretending that these events have the same business meaning. Events related to a case become a time-ordered story; cases can also be linked across systems when their identities or relationships can be established.
+
+Across many such stories, **Time Molecules** summarizes recurring event sequences into compact, inspectable probabilistic models, including Markov transition models. The models can be sliced and compared by event type, case type, time period, location, or other properties supported by the semantic context. This is where cross-domain questions emerge: *Does a change in one process tend to precede an event in another? Which transitions are different from last year? Do cases with certain properties follow unexpected paths?* The system makes the **temporal and process structure** of experience available for investigation, complementing the ISG's detected observations and the TCW's measured associations among qualified metrics.
+
+The trade-offs are real. Cross-system event normalization, case linking, event coverage, and appropriate property definitions require work. Transition probabilities are descriptions of observed sequences under modeling assumptions, **not proof of causal mechanisms**; missing events or incompatible case boundaries can produce misleading patterns. Time Molecules is strongest when temporal relationships are interpreted alongside enterprise semantics, human context, and other evidence. For more detail, see the [2026 Time Molecules refresh](https://eugeneasahara.com/2026/05/15/time-molecules-2026-refresh/).
+
 ## Putting the Four Together
 
 The purpose is not to choose one winner. **LLMs integrate broad documented patterns; people contribute diverse and often undocumented experience; ISG/TCW make enterprise observations and measured relationships available across domains; and knowledge graphs supply explicit, traversable connections.** Together, they enlarge the space of relationships an intelligence can consider.
